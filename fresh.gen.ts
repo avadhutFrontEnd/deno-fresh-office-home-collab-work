@@ -26,6 +26,7 @@ import * as $societyHomePage_unit_index from "./routes/societyHomePage/unit/inde
 import * as $societyHomePage_unit_showUnitDetails from "./routes/societyHomePage/unit/showUnitDetails.tsx";
 import * as $societyHomePage_unit_uploadUnit from "./routes/societyHomePage/unit/uploadUnit.tsx";
 import * as $AppLayoutIslands_sider_bar from "./islands/AppLayoutIslands/sider-bar.tsx";
+import * as $sign_up from "./islands/sign-up.tsx";
 import * as $societyHomePage_enter_billing_heads from "./islands/societyHomePage/enter-billing-heads.tsx";
 import * as $societyHomePage_enter_member from "./islands/societyHomePage/enter-member.tsx";
 import * as $societyHomePage_enter_unit from "./islands/societyHomePage/enter-unit.tsx";
@@ -68,6 +69,7 @@ const manifest = {
   },
   islands: {
     "./islands/AppLayoutIslands/sider-bar.tsx": $AppLayoutIslands_sider_bar,
+    "./islands/sign-up.tsx": $sign_up,
     "./islands/societyHomePage/enter-billing-heads.tsx":
       $societyHomePage_enter_billing_heads,
     "./islands/societyHomePage/enter-member.tsx": $societyHomePage_enter_member,
