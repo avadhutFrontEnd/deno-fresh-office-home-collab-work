@@ -1,0 +1,382 @@
+.innerparent {
+  margin: 0px  0px 0px 8px ;
+  
+}
+
+.navbar {
+    background-color: rgb(1, 0, 77);
+    display: flex;
+    justify-content: left;
+    height: 60px;
+    align-items: center;
+    font-size:x-large;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+/* ---------------------------------------------- */
+.parent {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #2c2929;
+    height:fit-content;
+}
+
+.main {
+    display: flex;
+    flex: 0 0 88vh;
+    flex-direction: row;
+}
+ 
+.mainslidebar {
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  /* margin: 1%; */
+  margin: 1% 1% 1% 0.5%;
+  padding: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffe8c3;
+  background-color: #455657; 
+  border: 2px solid black;
+  width:30%
+}
+
+.maincontent {
+    flex : 1;
+    display: flex;
+    flex: 0 0 70%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.content {
+    margin: 1.5% 0% 0% 0%;
+    background-color: #4f5d5e;  
+    border: 2px solid black;
+    height: 50%; 
+    /* width: 73vh; */
+    flex: 1 0 95%;
+    background-color: #6c7677;
+  }
+.Controls {
+    margin: 0% 0% 0% 0%;
+    /* background-color: #00ecff;  */
+    border-radius: 0px; 
+    /* border: 2px solid black; */
+    height: 10%; 
+    flex: 1 0 95%;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.displaytable {
+  display: flex;
+  flex-direction: column;
+    margin: 0% 0% 1% 0%;
+    /* background-color: #00ecff;  */
+    border-radius: 25px; 
+    border: 2px solid black;
+    flex: 1 0 95%;
+    /* background-color: #00ecff; */
+    /* width: 73vh; */
+    height: 33%;  
+}
+
+/* ---------------------------------------------- */
+.item {
+  display: flex;
+  flex: 0 0 88vh;
+  flex-direction: column;
+}
+
+#selectVideoButton {
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 50px 0px 20px 0px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color:#0047ab;
+    border: none;
+    border-radius: 50px;
+    border: 3px solid black;
+    /* box-shadow: 0 9px #999; */
+}
+
+
+#AlltimestampsDisplayText {
+  display: inline-block;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'georgia';
+  font-weight: bold;
+  color: white;
+  margin: 0px 0px 20px 0px;
+}
+
+#AlltimestampsDisplay{
+  display: inline-block;
+  height: 400px;
+  border: 3px solid black; ;
+  border-radius: 10%;
+  background-color: white;
+  margin: 10px 30px 10px 30px;
+}
+
+
+#inputtimestamp{
+  display: inline-block;
+  padding: 5px 25px;
+  margin: 25px 2px ;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  border: 3px dotted black;
+}
+
+#addtimestamp{
+  display: inline-block;
+  padding: 15px 25px;
+  margin: 25px 0px ;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color : #0047ab;
+  border: none;
+  border-radius: 50px;
+  border: 3px solid black;
+  font-size: 24px;
+
+}
+
+#submittimestamp{
+  display: inline-block;
+  padding: 15px 25px;
+  margin: 25px 0px ;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color : rgb(9, 190, 115);
+  border: none;
+  border-radius: 50px;
+  border: 3px solid black;
+  font-size: 24px;
+} 
+
+/* -------------------------------- */
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#back {
+  margin: 10px 20px 10px 20px;
+  /* background-color: #00ecff;  */
+  border: 2px solid black;
+  font-size: 50px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 50px;
+
+  padding: 10px 10px;
+}
+
+#play {
+  margin: 10px 20px 10px 20px;
+  /* background-color: #00ecff;;  */
+  border: 2px solid black;
+  font-size: 50px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 50px;
+
+  padding: 10px 10px;
+}
+
+#skip {
+  margin: 10px 20px 10px 20px;
+  /* background-color: #00ecff;;  */
+  border: 2px solid black;
+  font-size: 50px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 50px;
+
+  padding: 10px 10px;
+}
+
+.control {
+    /* margin: 0% 20% 10% 10%; */
+    /* background-color: #00ecff;  */
+    border-radius: 0px; 
+    border: 2px solid black;
+    height: 10%; 
+    flex: 1 0 95%;
+    background-color: white;
+}
+
+#displaytimestamp{
+  display: inline;
+  padding: 5px 10px;
+  margin: 25px 10px 2px 20px;
+  
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  border: 3px dotted black;
+}
+
+#dis {
+  display: inline;
+}
+
+span {
+  font-size: 32px;
+  margin: 25px 6px;
+  padding: 25px 0px 0px 0px;
+}
+
+.tablenav {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid black;
+  margin: 10px 40px 0px 10px ;
+  justify-content: center;
+  gap: 300px;
+  color: white;
+  background-color : black;
+  font-size: 24px;
+}
+
+
+.timestamp {
+  font-size: 30px;
+  margin: 0px 0px 0px 20px;
+}
+.ImageName {
+  font-size: 25px;
+  margin: 0px 0px 0px 20px;
+
+}
+
+.Option {
+  font-size: 25px;
+  margin: 0px 0px 0px 20px;
+}
+/* 
+.tablenav {
+  display: flex;
+  flex-direction: row;
+  /* border: 3px solid black; 
+  margin: 10px 40px 0px 10px ;
+  justify-content: flex-start;
+  gap: 50px;
+  color: white;
+  background-color: white;
+  font-size: 24px;
+} */
+.show {
+  display: flex;
+  flex-direction: row;
+  /* border: 3px solid black; */
+  margin: 10px 40px 0px 10px ;
+  justify-content: flex-start;
+  gap: 50px;
+  color: white;
+  background-color: white;
+  font-size: 24px;
+}
+
+.timestamp1 {
+  display: inline;
+  padding: 5px 25px;
+  margin: 20px 0px 20px 10px ;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  border: 3px dotted black;
+}
+
+.ImageName1 {
+  display: inline;
+
+  padding: 5px 25px;
+  margin: 20px 0px 20px 0px ;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: left;
+  text-decoration: none;
+  outline: none;
+  color: green;
+  background-color: white;
+  border: none;
+  border: 3px solid black;
+  width: 400px;
+
+
+}
+
+.Option1 {
+
+  display: inline;
+  padding: 5px 25px;
+  margin: 20px 10px 20px 100px ;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  border: 3px solid black;
+  background: aqua;
+  width: 100px;
+  
+
+}
