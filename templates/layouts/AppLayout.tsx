@@ -34,3 +34,285 @@ export default function AppLayout({ children }: ChildrenProps) {
         </>
     );
 }
+
+
+
+// [
+//     {
+//         "title": "building 1",
+//         "icon": "xyz.png",
+//         "children": [
+//             {
+//                 "title": "wing-A",
+//                 "icon": "xyz.png",
+//                 "children": [
+//                     {
+//                         "title": "floor-1",
+//                         "icon": "xyz.png",
+//                         "children": [
+//                             {
+//                                 "title": "unit-101",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-1"
+//                             },
+//                             {
+//                                 "title": "unit-101",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-2"
+//                             },
+//                             {
+//                                 "title": "unit-101",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-3"
+//                             }
+//                         ]
+//                     },
+//                     {
+//                         "title": "floor-2",
+//                         "icon": "xyz.png",
+//                         "children": [
+//                             {
+//                                 "title": "unit-201",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-1"
+//                             },
+//                             {
+//                                 "title": "unit-202",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-2"
+//                             },
+//                             {
+//                                 "title": "unit-203",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-3"
+//                             }
+//                         ]
+//                     },
+//                     {
+//                         "title": "floor-3",
+//                         "icon": "xyz.png",
+//                         "children": [
+//                             {
+//                                 "title": "unit-301",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-1"
+//                             },
+//                             {
+//                                 "title": "unit-302",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-2"
+//                             },
+//                             {
+//                                 "title": "unit-303",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-3"
+//                             }
+//                         ]
+
+//                     },
+//                     {
+//                         "title": "floor-4",
+//                         "icon": "xyz.png",
+//                         "children": [
+//                             {
+//                                 "title": "unit-401",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-1"
+//                             },
+//                             {
+//                                 "title": "unit-402",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-2"
+//                             },
+//                             {
+//                                 "title": "unit-403",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-3"
+//                             }
+//                         ]
+//                     }
+//                 ]
+//             },{
+//                 "title": "wing-B",
+//                 "icon": "xyz.png",
+//                 "children": [
+//                     {
+//                         "title": "floor-1",
+//                         "icon": "xyz.png",
+//                         "children": [
+//                             {
+//                                 "title": "unit-101",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-1"
+//                             },
+//                             {
+//                                 "title": "unit-101",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-2"
+//                             },
+//                             {
+//                                 "title": "unit-101",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-3"
+//                             }
+//                         ]
+//                     },
+//                     {
+//                         "title": "floor-2",
+//                         "icon": "xyz.png",
+//                         "children": [
+//                             {
+//                                 "title": "unit-201",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-1"
+//                             },
+//                             {
+//                                 "title": "unit-202",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-2"
+//                             },
+//                             {
+//                                 "title": "unit-203",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-3"
+//                             }
+//                         ]
+//                     },
+//                     {
+//                         "title": "floor-3",
+//                         "icon": "xyz.png",
+//                         "children": [
+//                             {
+//                                 "title": "unit-301",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-1"
+//                             },
+//                             {
+//                                 "title": "unit-302",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-2"
+//                             },
+//                             {
+//                                 "title": "unit-303",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-3"
+//                             }
+//                         ]
+
+//                     },
+//                     {
+//                         "title": "floor-4",
+//                         "icon": "xyz.png",
+//                         "children": [
+//                             {
+//                                 "title": "unit-401",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-1"
+//                             },
+//                             {
+//                                 "title": "unit-402",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-2"
+//                             },
+//                             {
+//                                 "title": "unit-403",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-3"
+//                             }
+//                         ]
+//                     }
+//                 ]
+//             },{
+//                 "title": "wing-C",
+//                 "icon": "xyz.png",
+//                 "children": [
+//                     {
+//                         "title": "floor-1",
+//                         "icon": "xyz.png",
+//                         "children": [
+//                             {
+//                                 "title": "unit-101",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-1"
+//                             },
+//                             {
+//                                 "title": "unit-101",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-2"
+//                             },
+//                             {
+//                                 "title": "unit-101",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-3"
+//                             }
+//                         ]
+//                     },
+//                     {
+//                         "title": "floor-2",
+//                         "icon": "xyz.png",
+//                         "children": [
+//                             {
+//                                 "title": "unit-201",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-1"
+//                             },
+//                             {
+//                                 "title": "unit-202",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-2"
+//                             },
+//                             {
+//                                 "title": "unit-203",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-3"
+//                             }
+//                         ]
+//                     },
+//                     {
+//                         "title": "floor-3",
+//                         "icon": "xyz.png",
+//                         "children": [
+//                             {
+//                                 "title": "unit-301",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-1"
+//                             },
+//                             {
+//                                 "title": "unit-302",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-2"
+//                             },
+//                             {
+//                                 "title": "unit-303",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-3"
+//                             }
+//                         ]
+
+//                     },
+//                     {
+//                         "title": "floor-4",
+//                         "icon": "xyz.png",
+//                         "children": [
+//                             {
+//                                 "title": "unit-401",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-1"
+//                             },
+//                             {
+//                                 "title": "unit-402",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-2"
+//                             },
+//                             {
+//                                 "title": "unit-403",
+//                                 "icon": "unit.png",
+//                                 "details": "pqr-3"
+//                             }
+//                         ]
+//                     }
+//                 ]
+//             }
+//         ]
+//     }
+// ]
