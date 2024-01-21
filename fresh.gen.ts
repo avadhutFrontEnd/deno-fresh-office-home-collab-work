@@ -9,7 +9,6 @@ import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
 import * as $newSocietyPage from "./routes/newSocietyPage.tsx";
 import * as $setUpPages_login from "./routes/setUpPages/login.tsx";
-
 import * as $setUpPages_societyDetails from "./routes/setUpPages/societyDetails.tsx";
 import * as $setUpPages_userlogin from "./routes/setUpPages/userlogin.tsx";
 import * as $societyHomePage_billingHeads_billingHeads from "./routes/societyHomePage/billingHeads/billingHeads.tsx";
@@ -26,6 +25,7 @@ import * as $societyHomePage_unit_index from "./routes/societyHomePage/unit/inde
 import * as $societyHomePage_unit_showUnitDetails from "./routes/societyHomePage/unit/showUnitDetails.tsx";
 import * as $societyHomePage_unit_uploadUnit from "./routes/societyHomePage/unit/uploadUnit.tsx";
 import * as $AppLayoutIslands_sider_bar from "./islands/AppLayoutIslands/sider-bar.tsx";
+import * as $sidebar from "./islands/sidebar.tsx";
 import * as $societyHomePage_enter_billing_heads from "./islands/societyHomePage/enter-billing-heads.tsx";
 import * as $societyHomePage_enter_member from "./islands/societyHomePage/enter-member.tsx";
 import * as $societyHomePage_enter_unit from "./islands/societyHomePage/enter-unit.tsx";
@@ -40,7 +40,7 @@ const manifest = {
     "./routes/index.tsx": $index,
     "./routes/newSocietyPage.tsx": $newSocietyPage,
     "./routes/setUpPages/login.tsx": $setUpPages_login,
-    "./routes/setUpPages/signUp.tsx": $setUpPages_societyDetails,
+    "./routes/setUpPages/societyDetails.tsx": $setUpPages_societyDetails,
     "./routes/setUpPages/userlogin.tsx": $setUpPages_userlogin,
     "./routes/societyHomePage/billingHeads/billingHeads.tsx":
       $societyHomePage_billingHeads_billingHeads,
@@ -67,6 +67,7 @@ const manifest = {
   },
   islands: {
     "./islands/AppLayoutIslands/sider-bar.tsx": $AppLayoutIslands_sider_bar,
+    "./islands/sidebar.tsx": $sidebar,
     "./islands/societyHomePage/enter-billing-heads.tsx":
       $societyHomePage_enter_billing_heads,
     "./islands/societyHomePage/enter-member.tsx": $societyHomePage_enter_member,
