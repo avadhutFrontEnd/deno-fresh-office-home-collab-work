@@ -9,6 +9,7 @@ import * as $css_flexbox from "./routes/css flexbox.tsx";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $homePage from "./routes/homePage.tsx";
 import * as $index from "./routes/index.tsx";
+import * as $newSIdeBarCSS from "./routes/newSIdeBarCSS.tsx";
 import * as $newSocietyPage from "./routes/newSocietyPage.tsx";
 import * as $setUpPages_login from "./routes/setUpPages/login.tsx";
 import * as $setUpPages_societyDetails from "./routes/setUpPages/societyDetails.tsx";
@@ -44,6 +45,7 @@ const manifest = {
     "./routes/greet/[name].tsx": $greet_name_,
     "./routes/homePage.tsx": $homePage,
     "./routes/index.tsx": $index,
+    "./routes/newSIdeBarCSS.tsx": $newSIdeBarCSS,
     "./routes/newSocietyPage.tsx": $newSocietyPage,
     "./routes/setUpPages/login.tsx": $setUpPages_login,
     "./routes/setUpPages/societyDetails.tsx": $setUpPages_societyDetails,
