@@ -1,53 +1,184 @@
-import { ComponentChildren } from "preact";
+import { useSignal } from "@preact/signals";
+import SidebarItem from "./sidebar-item.tsx";
+import { useState } from "preact/hooks";
 
-interface ChildrenProps {
-    children: ComponentChildren;
-}
+export default function Sidebar() {
+    const items = [
+        {
+            "title": "building 1",
+            "icon": "/static/assets/avatars/1building.png",
+            "children": [
+                {
+                    "title": "wing-A",
+                    "icon": "/static/assets/avatars/2wings.png",
+                    "children": [
+                        {
+                            "title": "floor-1",
+                            "icon": "xyz.png",
+                            "units": [
+                                {"title": "101", "icon": "unit.png", "details": "pqr-1", "key": "wing-A-unit-101-key"},
+                                {"title": "102", "icon": "unit.png", "details": "pqr-2", "key": "wing-A-unit-102-key"},
+                                {"title": "103", "icon": "unit.png", "details": "pqr-3", "key": "wing-A-unit-103-key"}
+                            ]
+                        },
+                        {
+                            "title": "floor-2",
+                            "icon": "xyz.png",
+                            "units": [
+                                {"title": "201", "icon": "unit.png", "details": "pqr-1", "key": "wing-A-unit-201-key"},
+                                {"title": "202", "icon": "unit.png", "details": "pqr-2", "key": "wing-A-unit-202-key"},
+                                {"title": "203", "icon": "unit.png", "details": "pqr-3", "key": "wing-A-unit-203-key"}
+                            ]
+                        },
+                        {
+                            "title": "floor-3",
+                            "icon": "xyz.png",
+                            "units": [
+                                {"title": "301", "icon": "unit.png", "details": "pqr-1", "key": "wing-A-unit-301-key"},
+                                {"title": "302", "icon": "unit.png", "details": "pqr-2", "key": "wing-A-unit-302-key"},
+                                {"title": "303", "icon": "unit.png", "details": "pqr-3", "key": "wing-A-unit-303-key"}
+                            ]
+                        },
+                        {
+                            "title": "floor-4",
+                            "icon": "xyz.png",
+                            "units": [
+                                {"title": "401", "icon": "unit.png", "details": "pqr-1", "key": "unit-401-key"},
+                                {"title": "402", "icon": "unit.png", "details": "pqr-2", "key": "unit-402-key"},
+                                {"title": "403", "icon": "unit.png", "details": "pqr-3", "key": "unit-403-key"}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "wing-B",
+                    "icon": "/static/assets/avatars/2wings.png",
+                    "children": [
+                        {
+                            "title": "floor-1",
+                            "icon": "xyz.png",
+                            "units": [
+                                {"title": "101", "icon": "unit.png", "details": "pqr-1", "key": "wing-B-unit-101-key"},
+                                {"title": "101", "icon": "unit.png", "details": "pqr-2", "key": "wing-B-unit-102-key"},
+                                {"title": "101", "icon": "unit.png", "details": "pqr-3", "key": "wing-B-unit-103-key"}
+                            ]
+                        },
+                        {
+                            "title": "floor-2",
+                            "icon": "xyz.png",
+                            "units": [
+                                {"title": "201", "icon": "unit.png", "details": "pqr-1", "key": "wing-B-unit-201-key"},
+                                {"title": "202", "icon": "unit.png", "details": "pqr-2", "key": "wing-B-unit-202-key"},
+                                {"title": "203", "icon": "unit.png", "details": "pqr-3", "key": "wing-B-unit-203-key"}
+                            ]
+                        },
+                        {
+                            "title": "floor-3",
+                            "icon": "xyz.png",
+                            "units": [
+                                {"title": "301", "icon": "unit.png", "details": "pqr-1", "key": "wing-B-unit-301-key"},
+                                {"title": "302", "icon": "unit.png", "details": "pqr-2", "key": "wing-B-unit-302-key"},
+                                {"title": "303", "icon": "unit.png", "details": "pqr-3", "key": "wing-B-unit-303-key"}
+                            ]
+                        },
+                        {
+                            "title": "floor-4",
+                            "icon": "xyz.png",
+                            "units": [
+                                {"title": "401", "icon": "unit.png", "details": "pqr-1", "key": "wing-B-unit-401-key"},
+                                {"title": "402", "icon": "unit.png", "details": "pqr-2", "key": "wing-B-unit-402-key"},
+                                {"title": "403", "icon": "unit.png", "details": "pqr-3", "key": "wing-B-unit-403-key"}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "wing-C",
+                    "icon": "xyz.png",
+                    "children": [
+                        {
+                            "title": "floor-1",
+                            "icon": "xyz.png",
+                            "units": [
+                                {"title": "101", "icon": "unit.png", "details": "pqr-1", "key": "wing-C-unit-101-key"},
+                                {"title": "101", "icon": "unit.png", "details": "pqr-2", "key": "wing-C-unit-102-key"},
+                                {"title": "101", "icon": "unit.png", "details": "pqr-3", "key": "wing-C-unit-103-key"}
+                            ]
+                        },
+                        {
+                            "title": "floor-2",
+                            "icon": "xyz.png",
+                            "units": [
+                                {"title": "201", "icon": "unit.png", "details": "pqr-1", "key": "wing-C-unit-201-key"},
+                                {"title": "202", "icon": "unit.png", "details": "pqr-2", "key": "wing-C-unit-202-key"},
+                                {"title": "203", "icon": "unit.png", "details": "pqr-3", "key": "wing-C-unit-203-key"}
+                            ]
+                        },
+                        {
+                            "title": "floor-3",
+                            "icon": "xyz.png",
+                            "units": [
+                                {"title": "301", "icon": "unit.png", "details": "pqr-1", "key": "wing-C-unit-301-key"},
+                                {"title": "302", "icon": "unit.png", "details": "pqr-2", "key": "wing-C-unit-302-key"},
+                                {"title": "303", "icon": "unit.png", "details": "pqr-3", "key": "wing-C-unit-303-key"}
+                            ]
+                        },
+                        {
+                            "title": "floor-4",
+                            "icon": "xyz.png",
+                            "units": [
+                                {"title": "401", "icon": "unit.png", "details": "pqr-1", "key": "wing-C-unit-401-key"},
+                                {"title": "402", "icon": "unit.png", "details": "pqr-2", "key": "wing-C-unit-402-key"},
+                                {"title": "403", "icon": "unit.png", "details": "pqr-3", "key": "wing-C-unit-403-key"}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ];
+    
+    console.log(JSON.stringify(items, null, 2));
+    
 
-export default function newVideoEdit({ children }) {
+    const [value, setValue] = useState({});
+
+    const sidebar = useSignal([{ "title": "Please !!! Select Floor" }]);
+
+    const SidebarFunction = (para) => {
+        console.log("sidebar :", para)
+    }
+    const obj = sidebar.value
     return (
         <>
-            <aside class=" h-screen ">
-                <nav class=" h-full flex flex-col bg-white border-r shadow-sm">
-                    <div class=" p-4 flex  flex-row justify-between items-center">
-                        <img src="logo.svg" alt="L" class=" w-32" />
-                        <button class="p-1.5 rounded-lg bg-gray-50 hover:bg-gray-100">
-                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1" />
-                            </svg>
-                        </button>
-                    </div>
-                    <ul class=" flex-1 px-3 ">{children}</ul>
-                    <div class=" border-t flex p-3 ">
-                        <img src="" alt="" class=" w-10 h-10 rounded-md" />
-                        <div class=" flex justify-between items-center w-52 ml-3">
-                            <div class="leading-4">
-                                <h4 class=" font-semibold">Avadhut jagde</h4>
-                                <span class=" text-xs text-gray-600">asdfgh@34gmail.com</span>
+            {/*-----------------  Class = sidebar */}
+            <div className="w-2/6 flex-shrink-0 bg-white h-full border-2 overflow-auto">
+                {items.map((item, index) => <SidebarItem key={index} item={item} sidebar={sidebar} value={value} onSidebarFunction={SidebarFunction} />)}
+            </div>
+            {/*-----------------  Class = container */}
+            <div class=" w-4/6 border-2 border-red-500 border-solid ">
+                {/* Content panel */}
+                {/* {console.log("sidebar signal value change :",sidebar)} */}
+
+                {console.log(obj)}
+
+                <div class="grid grid-cols-1 gap-4 px-4 mt-8 sm:grid-cols-4 sm:px-8">
+                    {sidebar.value.map((item) => (
+                            <div key={item.key} class="flex items-center bg-white border rounded-sm overflow-hidden shadow">
+                                <div class="p-4 bg-blue-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2">
+                                    </path>
+                                </svg></div>
+                                <div class="px-4 text-gray-700">
+                                    <h3 class="text-sm tracking-wider">Unit No</h3>
+                                    <p class="text-3xl">{item.title}</p>
+                                </div>
                             </div>
-                            <button class="p-1.5 rounded-lg bg-gray-50 hover:bg-gray-100">
-                                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h11m0 0-4-4m4 4-4 4m-5 3H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h3" />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </nav>
-            </aside>
+                    ))}
+                </div>
+            </div>
         </>
-    );
-}
-
-export function SidebarItem({icon , text , active , alert}){
-
-    return(
-        <li class={
-            `relative flex items-center py-2 px-3 my-1 font-medium rounded-md cursor-pointer transition-colors ${ active ? " bg-gradient-to-tr from-indigo-200 to-indigo-800" : " hover:bg-indigo-50 text-gray-600"} `}>
-           {icon} 
-           <span class=" w-52 ml-3">{text}</span>
-           {alert && (
-           <div class={`absolute right-2 w-2 h-2 rounded bg-indigo-400 `}></div>
-           )}
-        </li>   
     )
 }

@@ -1,7 +1,7 @@
 import { useSignal } from "@preact/signals";
 import { ComponentChildren } from "preact";
 import Sidebar from "../islands/sidebar.tsx";
-import { SidebarItem } from "../islands/sidebar.tsx";
+import { SidebarItem } from "../islands/xyz.tsx";
 
 
 interface ChildrenProps {

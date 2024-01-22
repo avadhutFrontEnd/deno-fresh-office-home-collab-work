@@ -5,7 +5,9 @@
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
+import * as $css_flexbox from "./routes/css flexbox.tsx";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
+import * as $homePage from "./routes/homePage.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $newSocietyPage from "./routes/newSocietyPage.tsx";
 import * as $setUpPages_login from "./routes/setUpPages/login.tsx";
@@ -25,10 +27,12 @@ import * as $societyHomePage_unit_index from "./routes/societyHomePage/unit/inde
 import * as $societyHomePage_unit_showUnitDetails from "./routes/societyHomePage/unit/showUnitDetails.tsx";
 import * as $societyHomePage_unit_uploadUnit from "./routes/societyHomePage/unit/uploadUnit.tsx";
 import * as $AppLayoutIslands_sider_bar from "./islands/AppLayoutIslands/sider-bar.tsx";
+import * as $sidebar_item from "./islands/sidebar-item.tsx";
 import * as $sidebar from "./islands/sidebar.tsx";
 import * as $societyHomePage_enter_billing_heads from "./islands/societyHomePage/enter-billing-heads.tsx";
 import * as $societyHomePage_enter_member from "./islands/societyHomePage/enter-member.tsx";
 import * as $societyHomePage_enter_unit from "./islands/societyHomePage/enter-unit.tsx";
+import * as $xyz from "./islands/xyz.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -36,7 +40,9 @@ const manifest = {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
     "./routes/api/joke.ts": $api_joke,
+    "./routes/css flexbox.tsx": $css_flexbox,
     "./routes/greet/[name].tsx": $greet_name_,
+    "./routes/homePage.tsx": $homePage,
     "./routes/index.tsx": $index,
     "./routes/newSocietyPage.tsx": $newSocietyPage,
     "./routes/setUpPages/login.tsx": $setUpPages_login,
@@ -67,11 +73,13 @@ const manifest = {
   },
   islands: {
     "./islands/AppLayoutIslands/sider-bar.tsx": $AppLayoutIslands_sider_bar,
+    "./islands/sidebar-item.tsx": $sidebar_item,
     "./islands/sidebar.tsx": $sidebar,
     "./islands/societyHomePage/enter-billing-heads.tsx":
       $societyHomePage_enter_billing_heads,
     "./islands/societyHomePage/enter-member.tsx": $societyHomePage_enter_member,
     "./islands/societyHomePage/enter-unit.tsx": $societyHomePage_enter_unit,
+    "./islands/xyz.tsx": $xyz,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
