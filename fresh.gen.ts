@@ -5,35 +5,12 @@
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
-import * as $css_flexbox from "./routes/css flexbox.tsx";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
-import * as $homePage from "./routes/homePage.tsx";
-import * as $index from "./routes/index.tsx";
-import * as $newSIdeBarCSS from "./routes/newSIdeBarCSS.tsx";
-import * as $newSocietyPage from "./routes/newSocietyPage.tsx";
-import * as $setUpPages_login from "./routes/setUpPages/login.tsx";
-import * as $setUpPages_societyDetails from "./routes/setUpPages/societyDetails.tsx";
-import * as $setUpPages_userlogin from "./routes/setUpPages/userlogin.tsx";
-import * as $societyHomePage_billingHeads_billingHeads from "./routes/societyHomePage/billingHeads/billingHeads.tsx";
-import * as $societyHomePage_billingHeads_index from "./routes/societyHomePage/billingHeads/index.tsx";
-import * as $societyHomePage_cycle_index from "./routes/societyHomePage/cycle/index.tsx";
-import * as $societyHomePage_index from "./routes/societyHomePage/index.tsx";
-import * as $societyHomePage_member_enterMember from "./routes/societyHomePage/member/enterMember.tsx";
-import * as $societyHomePage_member_index from "./routes/societyHomePage/member/index.tsx";
-import * as $societyHomePage_member_showMemberDetails from "./routes/societyHomePage/member/showMemberDetails.tsx";
-import * as $societyHomePage_member_uploadMember from "./routes/societyHomePage/member/uploadMember.tsx";
-import * as $societyHomePage_setUpUnitMember from "./routes/societyHomePage/setUpUnitMember.tsx";
-import * as $societyHomePage_unit_enterUnit from "./routes/societyHomePage/unit/enterUnit.tsx";
-import * as $societyHomePage_unit_index from "./routes/societyHomePage/unit/index.tsx";
-import * as $societyHomePage_unit_showUnitDetails from "./routes/societyHomePage/unit/showUnitDetails.tsx";
-import * as $societyHomePage_unit_uploadUnit from "./routes/societyHomePage/unit/uploadUnit.tsx";
-import * as $AppLayoutIslands_sider_bar from "./islands/AppLayoutIslands/sider-bar.tsx";
+import * as $society_homePage from "./routes/society/homePage.tsx";
+import * as $buttons from "./islands/buttons.tsx";
 import * as $sidebar_item from "./islands/sidebar-item.tsx";
 import * as $sidebar from "./islands/sidebar.tsx";
-import * as $societyHomePage_enter_billing_heads from "./islands/societyHomePage/enter-billing-heads.tsx";
-import * as $societyHomePage_enter_member from "./islands/societyHomePage/enter-member.tsx";
-import * as $societyHomePage_enter_unit from "./islands/societyHomePage/enter-unit.tsx";
-import * as $xyz from "./islands/xyz.tsx";
+import * as $society_islands_review from "./routes/society/(_islands)/review.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -41,47 +18,14 @@ const manifest = {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
     "./routes/api/joke.ts": $api_joke,
-    "./routes/css flexbox.tsx": $css_flexbox,
     "./routes/greet/[name].tsx": $greet_name_,
-    "./routes/homePage.tsx": $homePage,
-    "./routes/index.tsx": $index,
-    "./routes/newSIdeBarCSS.tsx": $newSIdeBarCSS,
-    "./routes/newSocietyPage.tsx": $newSocietyPage,
-    "./routes/setUpPages/login.tsx": $setUpPages_login,
-    "./routes/setUpPages/societyDetails.tsx": $setUpPages_societyDetails,
-    "./routes/setUpPages/userlogin.tsx": $setUpPages_userlogin,
-    "./routes/societyHomePage/billingHeads/billingHeads.tsx":
-      $societyHomePage_billingHeads_billingHeads,
-    "./routes/societyHomePage/billingHeads/index.tsx":
-      $societyHomePage_billingHeads_index,
-    "./routes/societyHomePage/cycle/index.tsx": $societyHomePage_cycle_index,
-    "./routes/societyHomePage/index.tsx": $societyHomePage_index,
-    "./routes/societyHomePage/member/enterMember.tsx":
-      $societyHomePage_member_enterMember,
-    "./routes/societyHomePage/member/index.tsx": $societyHomePage_member_index,
-    "./routes/societyHomePage/member/showMemberDetails.tsx":
-      $societyHomePage_member_showMemberDetails,
-    "./routes/societyHomePage/member/uploadMember.tsx":
-      $societyHomePage_member_uploadMember,
-    "./routes/societyHomePage/setUpUnitMember.tsx":
-      $societyHomePage_setUpUnitMember,
-    "./routes/societyHomePage/unit/enterUnit.tsx":
-      $societyHomePage_unit_enterUnit,
-    "./routes/societyHomePage/unit/index.tsx": $societyHomePage_unit_index,
-    "./routes/societyHomePage/unit/showUnitDetails.tsx":
-      $societyHomePage_unit_showUnitDetails,
-    "./routes/societyHomePage/unit/uploadUnit.tsx":
-      $societyHomePage_unit_uploadUnit,
+    "./routes/society/homePage.tsx": $society_homePage,
   },
   islands: {
-    "./islands/AppLayoutIslands/sider-bar.tsx": $AppLayoutIslands_sider_bar,
+    "./islands/buttons.tsx": $buttons,
     "./islands/sidebar-item.tsx": $sidebar_item,
     "./islands/sidebar.tsx": $sidebar,
-    "./islands/societyHomePage/enter-billing-heads.tsx":
-      $societyHomePage_enter_billing_heads,
-    "./islands/societyHomePage/enter-member.tsx": $societyHomePage_enter_member,
-    "./islands/societyHomePage/enter-unit.tsx": $societyHomePage_enter_unit,
-    "./islands/xyz.tsx": $xyz,
+    "./routes/society/(_islands)/review.tsx": $society_islands_review,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
