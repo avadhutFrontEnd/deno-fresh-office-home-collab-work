@@ -5,11 +5,15 @@
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
+import * as $bill_index from "./routes/bill/index.tsx";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $society_homePage from "./routes/society/homePage.tsx";
 import * as $buttons from "./islands/buttons.tsx";
 import * as $sidebar_item from "./islands/sidebar-item.tsx";
 import * as $sidebar from "./islands/sidebar.tsx";
+import * as $bill_islands_cycle from "./routes/bill/(_islands)/cycle.tsx";
+import * as $bill_islands_generate_bill from "./routes/bill/(_islands)/generate-bill.tsx";
+import * as $bill_islands_grid_component from "./routes/bill/(_islands)/grid-component.tsx";
 import * as $society_islands_review from "./routes/society/(_islands)/review.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
@@ -18,6 +22,7 @@ const manifest = {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
     "./routes/api/joke.ts": $api_joke,
+    "./routes/bill/index.tsx": $bill_index,
     "./routes/greet/[name].tsx": $greet_name_,
     "./routes/society/homePage.tsx": $society_homePage,
   },
@@ -25,6 +30,9 @@ const manifest = {
     "./islands/buttons.tsx": $buttons,
     "./islands/sidebar-item.tsx": $sidebar_item,
     "./islands/sidebar.tsx": $sidebar,
+    "./routes/bill/(_islands)/cycle.tsx": $bill_islands_cycle,
+    "./routes/bill/(_islands)/generate-bill.tsx": $bill_islands_generate_bill,
+    "./routes/bill/(_islands)/grid-component.tsx": $bill_islands_grid_component,
     "./routes/society/(_islands)/review.tsx": $society_islands_review,
   },
   baseUrl: import.meta.url,
