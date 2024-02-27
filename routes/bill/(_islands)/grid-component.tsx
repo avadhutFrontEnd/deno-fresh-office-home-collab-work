@@ -27,6 +27,96 @@ const GridComponent = () => {
 
     };
 
+    function logInfo(message) {
+        console.log('%c INFO: %c', 'color: #ffffff ; font-weight: bold ; background-color: red ', message);
+        console.info("message");
+      }
+      
+      // Usage:
+      logInfo('This is an informational message');
+      
+      // Define a base logging function with color formatting
+function log(level, message, ...data) {
+    const timestamp = new Date().toISOString().slice(11, 19);
+    const colors = {
+      info: 'color: blue',
+      warn: 'color: orange',
+      error: 'color: red',
+    };
+  
+    console.log(`[${timestamp}] [${level.toUpperCase()}]  %c${message} %c`, colors[level], ...data, 'color: black');
+  }
+  
+  // Create functions for different logging levels (info, warn, error)
+  function info(message, ...data) {
+    log('info', message, ...data);
+  }
+  
+  function warn(message, ...data) {
+    log('warn', message, ...data);
+  }
+  
+  function error(message, ...data) {
+    log('error', message, ...data);
+  }
+  
+  // Usage examples
+  info('This is an informational message');
+  warn('This is a warning message');
+  error('This is an error message');
+
+//   -------------------
+// Define a base logging function with color formatting
+function log(level, message, image, bgColor, ...data) {
+    const timestamp = new Date().toISOString().slice(11, 19);
+    const colors = {
+      info: 'color: blue',
+      warn: 'color: orange',
+      error: 'color: red',
+    };
+    const backgroundColor = bgColor ? `background-color: ${bgColor}` : '';
+  
+    console.log(`[${timestamp}] [${level.toUpperCase()}]  %c${message} %c`, colors[level], backgroundColor, ...data, 'color: black');
+    if (image) {
+      console.log('%c', `padding: 0; background: url('${image}') no-repeat; background-size: contain;`);
+    }
+  }
+  
+  // Create functions for different logging levels (info, warn, error)
+  function info(message, image, bgColor, ...data) {
+    log('info', message, image, bgColor, ...data);
+  }
+  
+  function warn(message, image, bgColor, ...data) {
+    log('warn', message, image, bgColor, ...data);
+  }
+  
+  function error(message, image, bgColor, ...data) {
+    log('error', message, image, bgColor, ...data);
+  }
+  
+  // Usage examples
+  info('This is an informational message', 'https://fresh.deno.dev/fresh-badge.svg', 'lightgray');
+  warn('This is a warning message', '', 'yellow');
+  error('This is an error message', '', 'red');
+  
+  info('This is an informational message', 'path/to/image.jpg', 'lightgray', 'This data will also have a lightgray background');
+
+// ----------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     return (
         <div className="h-full flex flex-col space-y-2">
             {/* Select element for cycle selection */}
