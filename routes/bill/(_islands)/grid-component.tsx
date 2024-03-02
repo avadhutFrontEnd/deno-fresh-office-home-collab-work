@@ -86,11 +86,11 @@ function log(level, message, image, bgColor, ...data) {
   function info(message, image, bgColor, ...data) {
     log('info', message, image, bgColor, ...data);
   }
-  
+
   function warn(message, image, bgColor, ...data) {
     log('warn', message, image, bgColor, ...data);
   }
-  
+
   function error(message, image, bgColor, ...data) {
     log('error', message, image, bgColor, ...data);
   }
@@ -99,7 +99,6 @@ function log(level, message, image, bgColor, ...data) {
   info('This is an informational message', 'https://fresh.deno.dev/fresh-badge.svg', 'lightgray');
   warn('This is a warning message', '', 'yellow');
   error('This is an error message', '', 'red');
-  
   info('This is an informational message', 'path/to/image.jpg', 'lightgray', 'This data will also have a lightgray background');
 
 // ----------------------------
