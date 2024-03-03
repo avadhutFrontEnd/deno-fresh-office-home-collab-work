@@ -12,6 +12,8 @@ import * as $society_index from "./routes/society/index.tsx";
 import * as $buttons from "./islands/buttons.tsx";
 import * as $sidebar_item from "./islands/sidebar-item.tsx";
 import * as $sidebar from "./islands/sidebar.tsx";
+import * as $bill_islands_Props from "./routes/bill/(_islands)/Props.tsx";
+import * as $bill_islands_Reactcode from "./routes/bill/(_islands)/Reactcode.tsx";
 import * as $bill_islands_cycle from "./routes/bill/(_islands)/cycle.tsx";
 import * as $bill_islands_flowBitSidebar from "./routes/bill/(_islands)/flowBitSidebar.tsx";
 import * as $bill_islands_generate_bill from "./routes/bill/(_islands)/generate-bill.tsx";
@@ -33,6 +35,8 @@ const manifest = {
     "./islands/buttons.tsx": $buttons,
     "./islands/sidebar-item.tsx": $sidebar_item,
     "./islands/sidebar.tsx": $sidebar,
+    "./routes/bill/(_islands)/Props.tsx": $bill_islands_Props,
+    "./routes/bill/(_islands)/Reactcode.tsx": $bill_islands_Reactcode,
     "./routes/bill/(_islands)/cycle.tsx": $bill_islands_cycle,
     "./routes/bill/(_islands)/flowBitSidebar.tsx": $bill_islands_flowBitSidebar,
     "./routes/bill/(_islands)/generate-bill.tsx": $bill_islands_generate_bill,
