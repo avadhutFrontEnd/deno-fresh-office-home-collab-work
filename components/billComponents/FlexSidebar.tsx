@@ -2,29 +2,110 @@
 export default function Sidebar() {
   return (
     <>
-      <aside id="sidebar-multi-level-sidebar" class="fixed inset-y-0 inset-x-0 flex-wrap items-center justify-between block  transition-all duration-200 -translate-x-full bg-white border-0 shadow-none  dark:bg-gray-950 ease-soft-in-out z-990  xl:translate-x-0 xl:bg-transparent ps ps--active-y max-w-64 overflow-y-auto z-40 w-[17rem]           h-[calc(100vh-40px)] sm:translate-x-0 " aria-label="Sidebar">
+      <aside id="sidebar-multi-level-sidebar" class="fixed inset-y-0 inset-x-0 flex-wrap items-center justify-between block  transition-all duration-200 -translate-x-full bg-white border-0 shadow-none  dark:bg-gray-950 ease-soft-in-out z-990  xl:translate-x-0 xl:bg-transparent ps ps--active-y max-w-64 overflow-y-auto z-40 w-[17rem]           h-[calc(100vh-40px)] sm:translate-x-0  border-solid border-gray-500 p-4" aria-label="Sidebar">
 
-        <div class="h-full overflow-y-auto bg-white dark:bg-gray-800 ">
-          <div class="h-20">
-            <i class="absolute top-0 right-0 p-4 opacity-50 cursor-pointer fas fa-times text-slate-400 dark:text-white xl:hidden" aria-hidden="true" sidenav-close-btn=""></i>
+        <div class="h-full  bg-white dark:bg-gray-800  border-2 border-solid border-blue-500 rounded-xl flex flex-col">
+          {/* Logo */}
+          <div class=" h-1/6">
+            <i class="absolute top-2 right-2 p-4 opacity-50 cursor-pointer fas fa-times text-slate-400 dark:text-white xl:hidden" aria-hidden="true" sidenav-close-btn=""></i>
             <a class="block px-8 py-6 m-0 text-sm whitespace-nowrap text-slate-700 dark:text-white" href=" https://localhost:8000/bill" target="_blank">
               <img src="/images/scai.png" class="inline-block h-full max-w-full transition-all duration-200 ease-soft-in-out max-h-8 dark:hidden" alt="main_logo" />
               <img src="" class="hidden h-full max-w-full transition-all duration-200 ease-soft-in-out max-h-8 dark:inline-block" alt="main_logo" />
               <span class="ml-1 font-semibold transition-all duration-200 ease-soft-in-out">SCAI</span>
             </a>
           </div>
+
           <hr class=" h-px mt-0 mb-4 bg-transparent bg-gradient-to-r from-transparent via-black/40 to-transparent dark:bg-gradient-to-r dark:from-transparent dark:via-white dark:to-transparent" />
 
-
-
-          {/* A : Page 1 */}
-          <div class="items-center block w-full h-auto grow basis-full" id="sidenav-collapse-main">
-            <ul class="flex flex-col pl-0 mb-0 list-none">
+          <div class="items-center block w-full h-4/6  grow basis-full " id="sidenav-collapse-main">
+            <ul class=" h-full flex flex-col pl-0 mb-0 list-none overflow-y-auto">
               {/* Section 1  */}
+              <li>
+                {/*  */}
+                {/* B : Page 2 */}
+                <div class="items-center block w-auto max-h-screen overflow-auto h-sidenav grow basis-full ps ps--active-y">
+                  <ul class="flex flex-col pl-0 mb-0">
+
+                    <li class="mt-0.5 w-full">
+                      <a class="py-2.7 bg-blue-500/10 dark:text-white dark:opacity-80 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap rounded-lg px-4 font-semibold text-slate-700 transition-colors" href="../pages/dashboard.html">
+                        <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
+                          <i class="relative ml-3 top-0 leading-normal text-blue-500 ni ni-tv-2 text-sm fa-solid fa-calendar-days"></i>
+                        </div>
+                        <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Dashboard</span>
+                      </a>
+                    </li>
+
+                    <li class="mt-0.5 w-full">
+                      <a class="py-2.7 bg-blue-500/10 dark:text-white dark:opacity-80 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap rounded-lg px-4 font-semibold text-slate-700 transition-colors " href="../pages/tables.html">
+                        <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
+                          <i class="relative ml-3 top-0 text-sm leading-normal text-orange-500 fa-solid fa-envelope ni ni-calendar-grid-58"></i>
+                        </div>
+                        <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Tables</span>
+                      </a>
+                    </li>
+
+                    <li class="mt-0.5 w-full">
+                      <a class="py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors dark:text-white dark:opacity-80" href="../pages/billing.html">
+                        <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center fill-current stroke-0 text-center xl:p-2.5">
+                          <i class="relative ml-3 top-0 text-sm leading-normal text-emerald-500 fa-solid fa-list ni ni-credit-card"></i>
+                        </div>
+                        <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Billing</span>
+                      </a>
+                    </li>
+                    <li class="mt-0.5 w-full">
+                      <a class="py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors dark:text-white dark:opacity-80" href="../pages/virtual-reality.html">
+                        <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5" style="color: #FFD43B;">
+                          <i class="relative ml-3 top-0 text-sm leading-normal text-yellow-500 ni ni-app fa-solid fa-lemon "></i>
+                        </div>
+                        <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Virtual Reality</span>
+                      </a>
+                    </li>
+                    <li class="mt-0.5 w-full">
+                      <a class="py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors dark:text-white dark:opacity-80" href="../pages/rtl.html">
+                        <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
+                          <i class="relative ml-3 top-0 text-sm leading-normal text-red-600 ni ni-world-2 fa-brands fa-hive"></i>
+                        </div>
+                        <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">RTL</span>
+                      </a>
+                    </li>
+                    {/* <li class="w-full mt-4">
+                      <h6 class="pl-6 ml-2 text-xs font-bold leading-tight uppercase dark:text-white opacity-60">Account pages</h6>
+                    </li>
+                    <li class="mt-0.5 w-full">
+                      <a class="py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors dark:text-white dark:opacity-80" href="../pages/profile.html">
+                        <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
+                          <i class="relative ml-3 top-0 text-sm leading-normal text-slate-700 ni ni-single-02 fa-solid fa-user"></i>
+                        </div>
+                        <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Profile</span>
+                      </a>
+                    </li>
+                    <li class="mt-0.5 w-full">
+                      <a class="py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors dark:text-white dark:opacity-80" href="../pages/sign-in.html">
+                        <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
+                          <i class="relative ml-3  top-0 text-sm leading-normal text-orange-500 ni ni-single-copy-04 fa-solid fa-signs-post"></i>
+                        </div>
+                        <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Sign In</span>
+                      </a>
+                    </li>
+                    <li class="mt-0.5 w-full">
+                      <a class="py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors dark:text-white dark:opacity-80" href="../pages/sign-up.html">
+                        <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
+                          <i class="relative ml-3 top-0 text-sm leading-normal text-cyan-500 ni ni-collection fa-brands fa-ubuntu"></i>
+                        </div>
+                        <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Sign Up</span>
+                      </a>
+                    </li> */}
+                  </ul>
+                  {/* <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                    <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                  </div>
+                  <div class="ps__rail-y" style="top: 0px; height: 370px; right: 0px;">
+                    <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 282px;"></div>
+                  </div> */}
+                </div>
+              </li>
+
               <li class="mt-0.5 w-full">
-
-
-
                 {/* Section 1  _________ Header */}
                 <a active_primary="" collapse_trigger="primary" href="javascript:;" class=" after:ease-soft-in-out after:font-awesome-3-free ease-soft-in-out text-sm py-3 active xl:shadow-soft-xl my-0 mx-4 flex items-center whitespace-nowrap rounded-lg bg-blue-500/30 px-4 font-semibold text-slate-700 transition-all after:ml-auto after:inline-block after:rotate-180 after:font-bold after:text-slate-800 after:antialiased after:transition-all after:duration-200 dark:text-white dark:opacity-80 after:content-['_↗']  border border-solid " aria-expanded="true">
                   <div class="stroke-none shadow-soft-sm bg-gradient-to-tl from-purple-700 to-pink-500 mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center fill-current p-2 text-center text-black">
@@ -108,7 +189,6 @@ export default function Sidebar() {
                   </ul>
                 </div>
               </li>
-
 
               <li class="w-full mt-4">
                 <h6 class="pl-6 ml-2 font-bold leading-tight uppercase text-xs opacity-60 dark:text-white">PAGES</h6>
@@ -630,7 +710,7 @@ export default function Sidebar() {
               </li>
               <li class="mt-0.5 w-full">
                 <hr class="h-px my-4 bg-transparent bg-gradient-to-r from-transparent via-black/40 to-transparent dark:bg-gradient-to-r dark:from-transparent dark:via-white dark:to-transparent" />
-                  <h6 class="pl-6 mb-2 ml-2 font-bold leading-tight uppercase text-xs opacity-60 dark:text-white">DOCS</h6>
+                <h6 class="pl-6 mb-2 ml-2 font-bold leading-tight uppercase text-xs opacity-60 dark:text-white">DOCS</h6>
               </li>
               <li class="mt-0.5 w-full">
                 <a collapse_trigger="primary" href="javascript:;" class="ease-soft-in-out text-sm py-2.7 active after:ease-soft-in-out after:font-awesome-5-free my-0 mx-4 flex items-center whitespace-nowrap px-4 font-medium text-slate-500 shadow-none transition-colors after:ml-auto after:inline-block after:font-bold after:text-slate-800/50 after:antialiased after:transition-all after:duration-200 dark:text-white dark:opacity-80 dark:after:text-white/50 dark:after:text-white after:content-['\f107']" aria-controls="basicExamples" role="button" aria-expanded="false">
@@ -831,95 +911,15 @@ export default function Sidebar() {
                   <span class="ml-1 duration-300 pointer-events-none ease-soft opacity-100">Changelog</span>
                 </a>
               </li>
-
             </ul>
           </div>
-
+          
           <hr class=" h-px mt-0 mb-4 bg-transparent bg-gradient-to-r from-transparent via-black/40 to-transparent dark:bg-gradient-to-r dark:from-transparent dark:via-white dark:to-transparent" />
+          
+          {/* Notification */}
+          <div class=" h-1/6">
 
-
-          {/* B : Page 2 */}
-          <div class="items-center block w-auto max-h-screen overflow-auto h-sidenav grow basis-full ps ps--active-y">
-            <ul class="flex flex-col pl-0 mb-0">
-
-              <li class="mt-0.5 w-full">
-                <a class="py-2.7 bg-blue-500/10 dark:text-white dark:opacity-80 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap rounded-lg px-4 font-semibold text-slate-700 transition-colors" href="../pages/dashboard.html">
-                  <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
-                    <i class="relative ml-3 top-0 leading-normal text-blue-500 ni ni-tv-2 text-sm fa-solid fa-calendar-days"></i>
-                  </div>
-                  <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Dashboard</span>
-                </a>
-              </li>
-
-              <li class="mt-0.5 w-full">
-                <a class="py-2.7 bg-blue-500/10 dark:text-white dark:opacity-80 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap rounded-lg px-4 font-semibold text-slate-700 transition-colors " href="../pages/tables.html">
-                  <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
-                    <i class="relative ml-3 top-0 text-sm leading-normal text-orange-500 fa-solid fa-envelope ni ni-calendar-grid-58"></i>
-                  </div>
-                  <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Tables</span>
-                </a>
-              </li>
-
-              <li class="mt-0.5 w-full">
-                <a class="py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors dark:text-white dark:opacity-80" href="../pages/billing.html">
-                  <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center fill-current stroke-0 text-center xl:p-2.5">
-                    <i class="relative ml-3 top-0 text-sm leading-normal text-emerald-500 fa-solid fa-list ni ni-credit-card"></i>
-                  </div>
-                  <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Billing</span>
-                </a>
-              </li>
-              <li class="mt-0.5 w-full">
-                <a class="py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors dark:text-white dark:opacity-80" href="../pages/virtual-reality.html">
-                  <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5" style="color: #FFD43B;">
-                    <i class="relative ml-3 top-0 text-sm leading-normal text-yellow-500 ni ni-app fa-solid fa-lemon "></i>
-                  </div>
-                  <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Virtual Reality</span>
-                </a>
-              </li>
-              <li class="mt-0.5 w-full">
-                <a class="py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors dark:text-white dark:opacity-80" href="../pages/rtl.html">
-                  <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
-                    <i class="relative ml-3 top-0 text-sm leading-normal text-red-600 ni ni-world-2 fa-brands fa-hive"></i>
-                  </div>
-                  <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">RTL</span>
-                </a>
-              </li>
-              <li class="w-full mt-4">
-                <h6 class="pl-6 ml-2 text-xs font-bold leading-tight uppercase dark:text-white opacity-60">Account pages</h6>
-              </li>
-              <li class="mt-0.5 w-full">
-                <a class="py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors dark:text-white dark:opacity-80" href="../pages/profile.html">
-                  <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
-                    <i class="relative ml-3 top-0 text-sm leading-normal text-slate-700 ni ni-single-02 fa-solid fa-user"></i>
-                  </div>
-                  <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Profile</span>
-                </a>
-              </li>
-              <li class="mt-0.5 w-full">
-                <a class="py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors dark:text-white dark:opacity-80" href="../pages/sign-in.html">
-                  <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
-                    <i class="relative ml-3  top-0 text-sm leading-normal text-orange-500 ni ni-single-copy-04 fa-solid fa-signs-post"></i>
-                  </div>
-                  <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Sign In</span>
-                </a>
-              </li>
-              <li class="mt-0.5 w-full">
-                <a class="py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors dark:text-white dark:opacity-80" href="../pages/sign-up.html">
-                  <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
-                    <i class="relative ml-3 top-0 text-sm leading-normal text-cyan-500 ni ni-collection fa-brands fa-ubuntu"></i>
-                  </div>
-                  <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Sign Up</span>
-                </a>
-              </li>
-            </ul>
-            <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; height: 370px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 282px;"></div></div></div>
-
-
-
-
-
-
-
+          </div>
         </div>
       </aside>
     </>

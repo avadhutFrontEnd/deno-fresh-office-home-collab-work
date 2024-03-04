@@ -1,45 +1,45 @@
-export default function Content() {
+export default function MemberContent() {
     return (
         <>
             <div class="pb-4 sm:ml-[17rem] bg-white h-full flex flex-col ">
 
                 <div class=" h-60 border-b-2 border-solid border-gray-400 p-4 flex flex-col">
-                    <div class="h-1/2 w-full flex flex-row justify-between border-2 border-solid border-red-300 items-center pl-2 py-2">
-                        
+                    <div class="h-1/2 w-full flex flex-row justify-between items-center pl-2 py-2">
                         <div class="flex w-2/3 justify-start space-x-3">
-                            <h1 class="inline text-4xl font-bold font-serif text-center text-blue-800 self-start ">Member List</h1>
-                             {/* Item set  */}
-                             <div class="flex flex-wrap mt-0 -mx-3 ">
+                            {/* <h1 class="inline text-4xl font-bold font-serif text-center text-blue-800 self-start w-1/3 ">Member</h1> */}
+                            {/* Item set  */}
+                            <div class="flex flex-wrap mt-0  w-2/3  ">
                                 {/* item 1 */}
-                                <div class="flex-none w-1/4 max-w-full  pl-0 pr-3 mt-0">
+                                <div class="flex-none w-2/6 max-w-full  pl-0 pr-3 mt-0">
                                     <div class="flex mb-2">
-                                        <div class="flex items-center justify-center w-5 h-5 mr-2 text-center bg-center rounded fill-current shadow-soft-2xl bg-gradient-to-tl from-purple-700 to-pink-500 text-neutral-900">
-                                            <svg width="10px" height="10px" viewBox="0 0 40 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns: xlink="http://www.w3.org/1999/xlink">
-                                                <title>document</title>
+                                        <div class="flex items-center justify-center w-5 h-5 mr-2 text-center bg-center rounded fill-current shadow-soft-2xl bg-gradient-to-tl from-green-600 to-lime-400 text-neutral-900">
+                                            <svg width="10px" height="10px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <title>settings</title>
                                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                    <g transform="translate(-1870.000000, -591.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                                    <g transform="translate(-2020.000000, -442.000000)" fill="#FFFFFF" fill-rule="nonzero">
                                                         <g transform="translate(1716.000000, 291.000000)">
-                                                            <g transform="translate(154.000000, 300.000000)">
-                                                                <path class="color-background" d="M40,40 L36.3636364,40 L36.3636364,3.63636364 L5.45454545,3.63636364 L5.45454545,0 L38.1818182,0 C39.1854545,0 40,0.814545455 40,1.81818182 L40,40 Z" opacity="0.603585379"></path>
-                                                                <path class="color-background" d="M30.9090909,7.27272727 L1.81818182,7.27272727 C0.814545455,7.27272727 0,8.08727273 0,9.09090909 L0,41.8181818 C0,42.8218182 0.814545455,43.6363636 1.81818182,43.6363636 L30.9090909,43.6363636 C31.9127273,43.6363636 32.7272727,42.8218182 32.7272727,41.8181818 L32.7272727,9.09090909 C32.7272727,8.08727273 31.9127273,7.27272727 30.9090909,7.27272727 Z M18.1818182,34.5454545 L7.27272727,34.5454545 L7.27272727,30.9090909 L18.1818182,30.9090909 L18.1818182,34.5454545 Z M25.4545455,27.2727273 L7.27272727,27.2727273 L7.27272727,23.6363636 L25.4545455,23.6363636 L25.4545455,27.2727273 Z M25.4545455,20 L7.27272727,20 L7.27272727,16.3636364 L25.4545455,16.3636364 L25.4545455,20 Z"></path>
+                                                            <g transform="translate(304.000000, 151.000000)">
+                                                                <polygon class="color-background" opacity="0.596981957" points="18.0883333 15.7316667 11.1783333 8.82166667 13.3333333 6.66666667 6.66666667 0 0 6.66666667 6.66666667 13.3333333 8.82166667 11.1783333 15.315 17.6716667"></polygon>
+                                                                <path class="color-background" d="M31.5666667,23.2333333 C31.0516667,23.2933333 30.53,23.3333333 30,23.3333333 C29.4916667,23.3333333 28.9866667,23.3033333 28.48,23.245 L22.4116667,30.7433333 L29.9416667,38.2733333 C32.2433333,40.575 35.9733333,40.575 38.275,38.2733333 L38.275,38.2733333 C40.5766667,35.9716667 40.5766667,32.2416667 38.275,29.94 L31.5666667,23.2333333 Z" opacity="0.596981957"></path>
+                                                                <path class="color-background" d="M33.785,11.285 L28.715,6.215 L34.0616667,0.868333333 C32.82,0.315 31.4483333,0 30,0 C24.4766667,0 20,4.47666667 20,10 C20,10.99 20.1483333,11.9433333 20.4166667,12.8466667 L2.435,27.3966667 C0.95,28.7083333 0.0633333333,30.595 0.00333333333,32.5733333 C-0.0583333333,34.5533333 0.71,36.4916667 2.11,37.89 C3.47,39.2516667 5.27833333,40 7.20166667,40 C9.26666667,40 11.2366667,39.1133333 12.6033333,37.565 L27.1533333,19.5833333 C28.0566667,19.8516667 29.01,20 30,20 C35.5233333,20 40,15.5233333 40,10 C40,8.55166667 39.685,7.18 39.1316667,5.93666667 L33.785,11.285 Z"></path>
                                                             </g>
                                                         </g>
                                                     </g>
                                                 </g>
                                             </svg>
                                         </div>
-                                        <p class="mt-1 mb-0 font-semibold leading-tight text-xs dark:opacity-60">Users</p>
+                                        <p class="mt-1 mb-0 font-semibold leading-tight text-xs dark:opacity-60">Active</p>
                                     </div>
-                                    <h4 class="font-bold dark:text-white">36K</h4>
+                                    <h4 class="font-bold dark:text-white">100</h4>
                                     <div class="text-xs h-0.75 flex w-3/4 overflow-visible rounded-lg bg-gray-200">
-                                        <div class="duration-600 ease-soft -mt-0.4 -ml-px flex h-1.5 w-3/5 flex-col justify-center overflow-hidden whitespace-nowrap rounded-lg bg-slate-700 text-center text-white transition-all" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="duration-600 ease-soft -mt-0.4 -ml-px flex h-1.5 w-2/3 flex-col justify-center overflow-hidden whitespace-nowrap rounded-lg bg-green-700 text-center text-white transition-all" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 {/* Item 2 */}
-                                <div class="flex-none w-1/4 max-w-full  pl-0 pr-3 mt-0">
+                                <div class="flex-none w-2/6 max-w-full  pl-0 pr-3 mt-0">
                                     <div class="flex mb-2">
-                                        <div class="flex items-center justify-center w-5 h-5 mr-2 text-center bg-center rounded fill-current shadow-soft-2xl bg-gradient-to-tl from-blue-600 to-cyan-400 text-neutral-900">
-                                            <svg width="10px" height="10px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns: xlink="http://www.w3.org/1999/xlink">
+                                        <div class="flex items-center justify-center w-5 h-5 mr-2 text-center bg-center rounded fill-current shadow-soft-2xl bg-gradient-to-tl from-red-600 to-rose-400 text-neutral-900">
+                                            <svg width="10px" height="10px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                                 <title>spaceship</title>
                                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                                     <g transform="translate(-1720.000000, -592.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -55,17 +55,17 @@ export default function Content() {
                                                 </g>
                                             </svg>
                                         </div>
-                                        <p class="mt-1 mb-0 font-semibold leading-tight text-xs dark:opacity-60">Clicks</p>
+                                        <p class="mt-1 mb-0 font-semibold leading-tight text-xs dark:opacity-60">Inactive</p>
                                     </div>
-                                    <h4 class="font-bold dark:text-white">2m</h4>
+                                    <h4 class="font-bold dark:text-white">55</h4>
                                     <div class="text-xs h-0.75 flex w-3/4 overflow-visible rounded-lg bg-gray-200">
-                                        <div class="duration-600 ease-soft -mt-0.4 w-9/10 -ml-px flex h-1.5 flex-col justify-center overflow-hidden whitespace-nowrap rounded-lg bg-slate-700 text-center text-white transition-all" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="duration-600 ease-soft -mt-0.4 w-2/6 -ml-px flex h-1.5 flex-col justify-center overflow-hidden whitespace-nowrap rounded-lg bg-red-700 text-center text-white transition-all" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
-                                <div class="flex-none w-1/4 max-w-full  pl-0 pr-3 mt-0">
+                                <div class="flex-none w-2/6 max-w-full  pl-0 pr-3 mt-0">
                                     <div class="flex mb-2">
                                         <div class="flex items-center justify-center w-5 h-5 mr-2 text-center bg-center rounded fill-current shadow-soft-2xl bg-gradient-to-tl from-red-500 to-yellow-400 text-neutral-900">
-                                            <svg width="10px" height="10px" viewBox="0 0 43 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns: xlink="http://www.w3.org/1999/xlink">
+                                            <svg width="10px" height="10px" viewBox="0 0 43 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                                 <title>credit-card</title>
                                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                                     <g transform="translate(-2169.000000, -745.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -79,44 +79,20 @@ export default function Content() {
                                                 </g>
                                             </svg>
                                         </div>
-                                        <p class="mt-1 mb-0 font-semibold leading-tight text-xs dark:opacity-60">Sales</p>
+                                        <p class="mt-1 mb-0 font-semibold leading-tight text-xs dark:opacity-60">Total</p>
                                     </div>
-                                    <h4 class="font-bold dark:text-white">435$</h4>
+                                    <h4 class="font-bold dark:text-white">155</h4>
                                     <div class="text-xs h-0.75 flex w-3/4 overflow-visible rounded-lg bg-gray-200">
-                                        <div class="duration-600 ease-soft -mt-0.4 w-3/10 -ml-px flex h-1.5 flex-col justify-center overflow-hidden whitespace-nowrap rounded-lg bg-slate-700 text-center text-white transition-all" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="duration-600 ease-soft -mt-0.4 w-3/4 -ml-px flex h-1.5 flex-col justify-center overflow-hidden whitespace-nowrap rounded-l-lg bg-green-700 text-center text-white transition-all" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="duration-600 ease-soft -mt-0.4 w-1/4 -ml-px flex h-1.5 flex-col justify-center overflow-hidden whitespace-nowrap rounded-r-lg bg-red-700 text-center text-white transition-all" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
-                                <div class="flex-none w-1/4 max-w-full  pl-0 pr-3 mt-0">
-                                    <div class="flex mb-2">
-                                        <div class="flex items-center justify-center w-5 h-5 mr-2 text-center bg-center rounded fill-current shadow-soft-2xl bg-gradient-to-tl from-red-600 to-rose-400 text-neutral-900">
-                                            <svg width="10px" height="10px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns: xlink="http://www.w3.org/1999/xlink">
-                                                <title>settings</title>
-                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                    <g transform="translate(-2020.000000, -442.000000)" fill="#FFFFFF" fill-rule="nonzero">
-                                                        <g transform="translate(1716.000000, 291.000000)">
-                                                            <g transform="translate(304.000000, 151.000000)">
-                                                                <polygon class="color-background" opacity="0.596981957" points="18.0883333 15.7316667 11.1783333 8.82166667 13.3333333 6.66666667 6.66666667 0 0 6.66666667 6.66666667 13.3333333 8.82166667 11.1783333 15.315 17.6716667"></polygon>
-                                                                <path class="color-background" d="M31.5666667,23.2333333 C31.0516667,23.2933333 30.53,23.3333333 30,23.3333333 C29.4916667,23.3333333 28.9866667,23.3033333 28.48,23.245 L22.4116667,30.7433333 L29.9416667,38.2733333 C32.2433333,40.575 35.9733333,40.575 38.275,38.2733333 L38.275,38.2733333 C40.5766667,35.9716667 40.5766667,32.2416667 38.275,29.94 L31.5666667,23.2333333 Z" opacity="0.596981957"></path>
-                                                                <path class="color-background" d="M33.785,11.285 L28.715,6.215 L34.0616667,0.868333333 C32.82,0.315 31.4483333,0 30,0 C24.4766667,0 20,4.47666667 20,10 C20,10.99 20.1483333,11.9433333 20.4166667,12.8466667 L2.435,27.3966667 C0.95,28.7083333 0.0633333333,30.595 0.00333333333,32.5733333 C-0.0583333333,34.5533333 0.71,36.4916667 2.11,37.89 C3.47,39.2516667 5.27833333,40 7.20166667,40 C9.26666667,40 11.2366667,39.1133333 12.6033333,37.565 L27.1533333,19.5833333 C28.0566667,19.8516667 29.01,20 30,20 C35.5233333,20 40,15.5233333 40,10 C40,8.55166667 39.685,7.18 39.1316667,5.93666667 L33.785,11.285 Z"></path>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <p class="mt-1 mb-0 font-semibold leading-tight text-xs dark:opacity-60">Items</p>
-                                    </div>
-                                    <h4 class="font-bold dark:text-white">43</h4>
-                                    <div class="text-xs h-0.75 flex w-3/4 overflow-visible rounded-lg bg-gray-200">
-                                        <div class="duration-600 ease-soft -mt-0.4 -ml-px flex h-1.5 w-1/2 flex-col justify-center overflow-hidden whitespace-nowrap rounded-lg bg-slate-700 text-center text-white transition-all" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
-                        
-                        <div class=" flex flex-col justify-between items-center space-y-3">
-                            <button icon="fa-solid fa-cart-shopping" type="button" class=" bg-blue-50  text-white bg-blue hover:bg-blue-100 border border-blue-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2">
-                                <i class="fa-solid fa-plus mx-2" style="color: #ffffff;"></i>
+                        <div class="flex flex-col justify-between w-1/3 items-center space-y-3">
+                            <button onClick={() => handleBook(props.movie)} icon="fa-solid fa-cart-shopping" type="button" class=" border-2 border-blue-500 border-solid  text-[#1b79c0;] bg-white hover:bg-gray-100   focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-2 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2">
+                                <i class="fa-sharp fa-solid fa-plus mr-3" style="color: #1b79c0;"></i>
                                 New Member
                             </button>
                         </div>

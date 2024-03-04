@@ -51,7 +51,7 @@ export default function newVideoEdit(props: ChildrenProps) {
             {/* <GenerateBill /> */}
             {/* </AppLayout> */}
             <div class="flex flex-col h-screen w-screen ">
-                <div class="flex-1 flex flex-col border-10 border-solid bg-red-200 mb-10 overflow-x-hidden ">
+                <div class="flex-1 flex flex-col border-10 border-solid bg-white mb-10 overflow-x-hidden ">
                     <FlowBitSidebar />
                     {/* <ReactCode /> */}
 
