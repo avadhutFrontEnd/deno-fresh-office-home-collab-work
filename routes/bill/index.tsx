@@ -52,7 +52,7 @@ export default function newVideoEdit(props: ChildrenProps) {
             {/* </AppLayout> */}
             <div class="flex flex-col h-screen w-screen ">
                 <div class="flex-1 flex flex-col border-10 border-solid bg-red-200 mb-10 overflow-x-hidden ">
-                    {/* <FlowBitSidebar /> */}
+                    <FlowBitSidebar />
                     {/* <ReactCode /> */}
 
 {/* Level 1 */}
@@ -71,7 +71,7 @@ export default function newVideoEdit(props: ChildrenProps) {
                     </div> */}
 
  {/* Level 3 */}
-                    <div className="grid grid-cols-2">
+                    {/* <div className="grid grid-cols-2">
                         {itemsArray.map((item, index) => (
                             <Props
                                 key={index}
@@ -81,10 +81,8 @@ export default function newVideoEdit(props: ChildrenProps) {
                                 img={item.img}
                             />
                         ))}
-                    </div>
-
-
-
+                    </div> */}
+                    
                 </div>
                 <div class="w-full flex flex-row justify-center items-center border-t-2 border-solid border-gray-400  h-10 fixed bottom-0 left-0 z-40 ">
                     <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="http://chintan.in/" class="hover:underline">SCAI chintan's product™</a>. All Rights Reserved.</span>

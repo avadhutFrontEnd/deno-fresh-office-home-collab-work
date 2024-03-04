@@ -2,8 +2,9 @@
 export default function Sidebar() {
   return (
     <>
-      <aside id="sidebar-multi-level-sidebar" class="fixed inset-y-0 left-0 flex-wrap items-center justify-between block  p-0 my-3 mx-4 transition-all duration-200 -translate-x-full bg-white border-0 shadow-none xl:ml-4 dark:bg-gray-950 ease-soft-in-out z-990 rounded-2xl xl:translate-x-0 xl:bg-transparent ps ps--active-y max-w-64 overflow-y-auto          z-40 w-64 h-[calc(100vh-4rem)] sm:translate-x-0" aria-label="Sidebar">
-        <div class="h-full overflow-y-auto bg-white dark:bg-gray-800">
+      <aside id="sidebar-multi-level-sidebar" class="fixed inset-y-0 inset-x-0 flex-wrap items-center justify-between block  transition-all duration-200 -translate-x-full bg-white border-0 shadow-none  dark:bg-gray-950 ease-soft-in-out z-990  xl:translate-x-0 xl:bg-transparent ps ps--active-y max-w-64 overflow-y-auto z-40 w-[17rem]           h-[calc(100vh-40px)] sm:translate-x-0 " aria-label="Sidebar">
+
+        <div class="h-full overflow-y-auto bg-white dark:bg-gray-800 ">
           <div class="h-20">
             <i class="absolute top-0 right-0 p-4 opacity-50 cursor-pointer fas fa-times text-slate-400 dark:text-white xl:hidden" aria-hidden="true" sidenav-close-btn=""></i>
             <a class="block px-8 py-6 m-0 text-sm whitespace-nowrap text-slate-700 dark:text-white" href=" https://localhost:8000/bill" target="_blank">

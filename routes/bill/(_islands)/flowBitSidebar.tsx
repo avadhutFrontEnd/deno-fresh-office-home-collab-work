@@ -8,6 +8,7 @@ import Sidebar from "../../../components/billComponents/Sidebar.tsx";
 import Content from "../../../components/billComponents/Content.tsx";
 import FlexSidebar from "../../../components/billComponents/FlexSidebar.tsx";
 import FlexContent from "../../../components/billComponents/FlexContent.tsx";
+import MemberContent from "../../../components/billComponents/MemberContent.tsx"
 
 interface ChildrenProps {
     children: ComponentChildren;
@@ -21,7 +22,8 @@ export default function FlowBitSidebar(props: ChildrenProps) {
             <Sidebar />
             <Content /> */}
             <FlexSidebar />
-            <FlexContent />
+            {/* <FlexContent /> */}
+            <MemberContent />
         </>
     );
 }
