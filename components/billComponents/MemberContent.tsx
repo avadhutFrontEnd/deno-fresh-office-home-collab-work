@@ -1,4 +1,6 @@
 import Table from "./table.tsx";
+import NewTable from "./newTable.tsx";
+import TableProperty from "./TableProperty.tsx";
 
 export default function MemberContent() {
     return (
@@ -10,11 +12,11 @@ export default function MemberContent() {
 
                     <div class="h-1/2 w-full flex flex-row justify-between items-start ">
                         <div class="flex w-2/3 h-full">
-                            <nav class=" w-auto">
+                            <nav class=" min-w-fit w-auto mr-20">
                                 <ol class="flex flex-wrap pt-1 mr-12 bg-transparent rounded-lg sm:mr-16 ">
                                     <li class="leading-normal text-sm breadcrumb-item">
-                                        <a class="text-slate-700 opacity-30 dark:text-white" href="javascript:;">
-                                            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-home-check " width={24} height={24} viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                        <a class=" text-blue-800  dark:text-white" href="javascript:;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-home-check " width={24} height={24} viewBox="0 0 24 24" strokeWidth={5} stroke="blue" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                                 <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2" />
                                                 <path d="M19 13.488v-1.488h2l-9 -9l-9 9h2v7a2 2 0 0 0 2 2h4.525" />
@@ -26,15 +28,6 @@ export default function MemberContent() {
                                         <a class="opacity-50 text-slate-700 dark:text-white" href="javascript:;">Pages</a>
                                     </li>
                                     <li class="text-sm pl-2 capitalize leading-normal text-slate-700 before:float-left before:pr-2 before:text-gray-600 before:content-['/'] dark:text-white dark:before:text-white" aria-current="page">Default</li>
-                                    <li class="text-sm pl-2 leading-normal before:float-left before:pr-2 before:text-gray-600 before:content-['/']">
-                                        <a class="opacity-50 text-slate-700 dark:text-white" href="javascript:;">Pages</a>
-                                    </li>
-                                    <li class="text-sm pl-2 capitalize leading-normal text-slate-700 before:float-left before:pr-2 before:text-gray-600 before:content-['/'] dark:text-white dark:before:text-white" aria-current="page">Default</li>
-                                    <li class="text-sm pl-2 leading-normal before:float-left before:pr-2 before:text-gray-600 before:content-['/']">
-                                        <a class="opacity-50 text-slate-700 dark:text-white" href="javascript:;">Pages</a>
-                                    </li>
-                                    <li class="text-sm pl-2 capitalize leading-normal text-slate-700 before:float-left before:pr-2 before:text-gray-600 before:content-['/'] dark:text-white dark:before:text-white" aria-current="page">Default</li>
-
                                 </ol>
                                 <h6 class="mb-0 font-bold capitalize dark:text-white">Default</h6>
                             </nav>
@@ -132,22 +125,22 @@ export default function MemberContent() {
                                 New Member
                             </button> */}
                             <div class=" w-2/4 flex items-start ml-auto justify-between">
-                                <button type="button" class=" w-1/3  text-white bg-[#2557D6] hover:bg-[#2557D6]/90 focus:ring-4 focus:ring-[#2557D6]/50 focus:outline-none font-medium rounded-lg text-sm py-2 px-1 text-center inline-flex items-center dark:focus:ring-[#2557D6]/50 me-2 ">
+                                <button type="button" class=" w-2/4  text-white bg-[#2557D6] hover:bg-[#2557D6]/90 focus:ring-4 focus:ring-[#2557D6]/50 focus:outline-none font-medium rounded-lg text-sm py-2 px-5 text-center inline-flex items-center dark:focus:ring-[#2557D6]/50 me-2 space-x-2  ">
                                     <svg class="w-5 h-5  fill-current" viewBox="0 0 20 20"><path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
                                     <span>Member</span>
                                 </button>
-                                <div class=" w-2/3 inline-flex rounded-lg shadow-sm" role="group">
-                                    <button type="button" class=" w-1/2 rounded-l-md space-x-1 inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-s-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
-                                        <svg class="w-[16px] h-[16px] " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <div class=" w-2/4 inline-flex rounded-lg shadow-sm" role="group">
+                                    <button type="button" class=" w-1/2 rounded-l-md space-x-1 inline-flex items-center px-4 pb-1 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-s-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+                                        <svg class=" w-7 h-7 p-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 20 20">
                                             <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M9 8h10M9 12h10M9 16h10M5 8h0m0 4h0m0 4h0" />
                                         </svg>
-                                        <span>List</span>
+                                        {/* <span>List</span> */}
                                     </button>
-                                    <button type="button" class=" w-1/2 rounded-r-md  space-x-1 inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
-                                        <svg class="w-[16px] h-[16px] " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <button type="button" class=" w-2/4 rounded-r-md  space-x-1 inline-flex items-center px-4 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+                                        <svg class="w-6 h-6 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
                                             <path fill-rule="evenodd" d="M4.9 3C3.9 3 3 3.8 3 4.9V9c0 1 .8 1.9 1.9 1.9H9c1 0 1.9-.8 1.9-1.9V5c0-1-.8-1.9-1.9-1.9H5Zm10 0c-1 0-1.9.8-1.9 1.9V9c0 1 .8 1.9 1.9 1.9H19c1 0 1.9-.8 1.9-1.9V5c0-1-.8-1.9-1.9-1.9h-4Zm-10 10c-1 0-1.9.8-1.9 1.9V19c0 1 .8 1.9 1.9 1.9H9c1 0 1.9-.8 1.9-1.9v-4c0-1-.8-1.9-1.9-1.9H5Zm10 0c-1 0-1.9.8-1.9 1.9V19c0 1 .8 1.9 1.9 1.9H19c1 0 1.9-.8 1.9-1.9v-4c0-1-.8-1.9-1.9-1.9h-4Z" clip-rule="evenodd" />
                                         </svg>
-                                        <span>Grid</span>
+                                        {/* <span>Grid</span> */}
                                     </button>
                                 </div>
                             </div>
@@ -182,8 +175,8 @@ export default function MemberContent() {
                     {/* Section */}
                     <div class="h-1/2 w-full  pt-2 ">
                         <div class="relative flex w-full h-full rounded-md px-2 flex-wrap items-center justify-start bg-blue-800/90 py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700">
-                            <div class="flex w-2/3 h-full justify-between">
-                                <div class="flex w-1/3 items-center justify-between relative mr-12">
+                            <div class="flex w-full h-full justify-between space-x-2">
+                                <div class="flex w-1/6 items-center justify-between relative ">
                                     <div class="relative w-full">
                                         <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                                             <svg
@@ -202,7 +195,7 @@ export default function MemberContent() {
                                     </div>
                                 </div>
 
-                                <div class="flex w-2/3 ml-28 relative  items-center justify-start space-x-2 ml-10">
+                                <div class="flex w-5/6  relative  items-center justify-start space-x-2 ">
                                     <div type="button" class=" text-white w-40 border focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-sm pl-4 px-5 py-1 text-center inline-flex items-center ">
                                         <svg class="w-6 h-6 me-1 text-gray-100 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.75 4H19M7.75 4a2.25 2.25 0 0 1-4.5 0m4.5 0a2.25 2.25 0 0 0-4.5 0M1 4h2.25m13.5 6H19m-2.25 0a2.25 2.25 0 0 1-4.5 0m4.5 0a2.25 2.25 0 0 0-4.5 0M1 10h11.25m-4.5 6H19M7.75 16a2.25 2.25 0 0 1-4.5 0m4.5 0a2.25 2.25 0 0 0-4.5 0M1 16h2.25" />
@@ -262,7 +255,9 @@ export default function MemberContent() {
                 </div>
 
                 <div class=" py-4 pr-4  dark:border-gray-700 h-full overflow-y-scroll">
-                    <Table />
+                    {/* <Table /> */}
+                    {/* <NewTable /> */}
+                    <TableProperty />
                 </div>
             </div>
         </>

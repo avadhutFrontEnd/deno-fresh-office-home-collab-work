@@ -9,11 +9,13 @@ export default function newVideoEdit(props: ChildrenProps) {
    const count = useSignal(0);
    return (
       <>
-         <div class="bg-stone-300 w-full h-screen flex items-center justify-center">
-            <div class="bg-gray-100 h-fit border-2 border-solid border-white rounded-md justify-between flex-col pt">
+         {/* <div class="bg-stone-300 w-full h-screen flex items-center justify-center">
+            <div class="bg-gray-100 h-fit border-2 border-solid border-white rounded-md justify-between flex-col pt"> */}
+               
+               
+               
                <table class="m-1 -indent-2 ml-2  table-auto text-center ">
-                  <tbody class="flex justify-center items-center">
-                     <thead>
+                  <thead class="flex items-center">
                         <tr>
                            <th scope="col" class=" pl-2 text-xs">Course Name</th>
                            <th scope="col" class="text-xs pl-8">Category</th>
@@ -22,12 +24,9 @@ export default function newVideoEdit(props: ChildrenProps) {
                            <th scope="col" class="text-xs pl-8">Mail</th>
                            <th scope="col" class="text-xs pl-12">Contact</th>
                         </tr>
-                     </thead>
-                  </tbody>
-               </table>
-               <table class="m-1 -indent-2 ml-2 table-auto text-center border border-slate-400 border-l-4 bg-slate-200 ">
-
-                  <tbody class="flex justify-center items-center">
+                  </thead>
+                  
+                  <tbody class="flex justify-center items-center  -indent-2 table-auto text-center border border-red-400 border-l-4 bg-slate-200 ">
                      <tr>
                         <td class="border-blue-gray-50 border-b p-2 pr-4">
                            <div class="flex items-center gap-3">
@@ -104,8 +103,8 @@ export default function newVideoEdit(props: ChildrenProps) {
                      </tr>
                   </tbody>
                </table>
-            </div>
-         </div>
+            {/* </div>
+         </div> */}
 
 
 
