@@ -18,7 +18,7 @@ export default function newVideoEdit(props: ChildrenProps) {
                            <div class="table-cell px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase">Course Name</div>
                            <div class="table-cell px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase">Category</div>
                            <div class="table-cell px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase">First Name</div>
-                           <div class="table-cell px-6 py-3 text-end text-xs font-medium text-gray-500 uppercase">Last Name Mail</div>
+                           <div class="table-cell px-6 py-3 text-end text-xs font-medium text-gray-500 uppercase">Last Name</div>
                            <div class="table-cell px-6 py-3 text-end text-xs font-medium text-gray-500 uppercase">Mail</div>
                            <div class="table-cell px-6 py-3 text-end text-xs font-medium text-gray-500 uppercase">Contact</div>
                            <div class="table-cell px-6 py-3 text-end text-xs font-medium text-gray-500 uppercase"></div>

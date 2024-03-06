@@ -13,6 +13,7 @@ export default function Sidebar() {
               <img src="" class="hidden h-full max-w-full transition-all duration-200 ease-soft-in-out max-h-8 dark:inline-block" alt="main_logo" />
               <span class="ml-1 font-semibold transition-all duration-200 ease-soft-in-out">SCAI</span>
             </a>
+            <div class=" h-10 w-full sm:bg-blue-500 md:bg-pink-500 lg:bg-red-600 xl:bg-green-400 2xl:bg-yellow-400"></div>
           </div>
 
           <hr class=" h-px mt-0 mb-4 bg-transparent bg-gradient-to-r from-transparent via-black/40 to-transparent dark:bg-gradient-to-r dark:from-transparent dark:via-white dark:to-transparent" />

@@ -256,8 +256,8 @@ export default function MemberContent() {
 
                 <div class=" py-4 pr-4  dark:border-gray-700 h-full overflow-y-scroll">
                     {/* <Table /> */}
-                    {/* <NewTable /> */}
-                    <TableProperty />
+                    <NewTable />
+                    {/* <TableProperty /> */}
                 </div>
             </div>
         </>
