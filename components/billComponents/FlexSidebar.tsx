@@ -48,19 +48,19 @@ export default function Sidebar() {
                       </a>
                     </li>
 
-                    <li class="mt-0.5 w-full">
+                    {/* <li class="mt-0.5 w-full">
                       <a class="py-2.7 bg-blue-500/10 dark:text-white dark:opacity-80 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap rounded-lg px-4 font-semibold text-slate-700 transition-colors" href="../pages/dashboard.html">
                         <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
-                          <i class="relative ml-3 top-0 leading-normal text-blue-500 ni ni-tv-2 text-sm fa-solid fa-calendar-days"></i>
+                          <i class="relative top-0 leading-normal text-blue-500 ni ni-tv-2 text-sm fa-solid fa-calendar-days"></i>
                         </div>
                         <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Dashboard</span>
                       </a>
-                    </li>
+                    </li> */}
 
                     <li class="mt-0.5 w-full">
                       <a class="py-2.7 bg-blue-500/10 dark:text-white dark:opacity-80 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap rounded-lg px-4 font-semibold text-slate-700 transition-colors " href="../pages/tables.html">
                         <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
-                          <i class=" ml-3 fa-solid fa-users text-orange-600" ></i>
+                          <i class=" fa-solid fa-users text-orange-600" ></i>
                         </div>
                         <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Members</span>
                       </a>
@@ -69,7 +69,7 @@ export default function Sidebar() {
                     <li class="mt-0.5 w-full">
                       <a class="py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors dark:text-white dark:opacity-80" href="../pages/billing.html">
                         <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center fill-current stroke-0 text-center xl:p-2.5">
-                          <i class="fa-solid fa-building relative ml-3 top-0 text-sm leading-normal text-emerald-500 " ></i>
+                          <i class="fa-solid fa-building relative top-0 text-sm leading-normal text-emerald-500 " ></i>
                         </div>
                         <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Units</span>
                       </a>
@@ -77,7 +77,7 @@ export default function Sidebar() {
                     <li class="mt-0.5 w-full">
                       <a class="py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors dark:text-white dark:opacity-80" href="../pages/virtual-reality.html">
                         <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5" style="color: #FFD43B;">
-                          <i class="relative ml-3 top-0 text-sm leading-normal text-yellow-500 ni ni-app fa-solid fa-lemon "></i>
+                          <i class="relative top-0 text-sm leading-normal text-yellow-500 ni ni-app fa-solid fa-lemon "></i>
                         </div>
                         <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Bill Heads</span>
                       </a>
@@ -85,7 +85,7 @@ export default function Sidebar() {
                     <li class="mt-0.5 w-full">
                       <a class="py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors dark:text-white dark:opacity-80" href="../pages/rtl.html">
                         <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
-                          <i class="relative ml-3 top-0 text-sm leading-normal text-red-600 ni ni-world-2 fa-brands fa-hive"></i>
+                          <i class="relative top-0 text-sm leading-normal text-red-600 ni ni-world-2 fa-brands fa-hive"></i>
                         </div>
                         <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Templates</span>
                       </a>
@@ -93,7 +93,7 @@ export default function Sidebar() {
                     <li class="mt-0.5 w-full">
                       <a class="py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors dark:text-white dark:opacity-80" href="../pages/rtl.html">
                         <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
-                          <i class="relative ml-3 top-0 text-sm leading-normal text-red-600 fa-solid fa-list-check"></i>
+                          <i class="relative top-0 text-sm leading-normal text-red-600 fa-solid fa-list-check"></i>
                         </div>
                         <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Bills</span>
                       </a>
@@ -137,11 +137,43 @@ export default function Sidebar() {
             </ul>
           </div>
 
-          <hr class=" h-px mt-0 mb-4 bg-transparent bg-gradient-to-r from-transparent via-black/40 to-transparent dark:bg-gradient-to-r dark:from-transparent dark:via-white dark:to-transparent" />
 
           {/* Notification */}
-          <div class=" h-1/6">
+          <div class=" h-1/6 bg-blue-500">
+          <div class="flex flex-row items-center pr-3">
+            <ul
+              role="list"
+              class="max-w-sm divide-y divide-gray-200 dark:divide-gray-700 flex flex-row "
+            >
+              <li class="py-3 sm:py-4 mx-2">
+                <div class="flex items-center space-x-3 rtl:space-x-reverse">
+                  <div class="flex-shrink-0">
+                    <img
+                      class="w-10 h-10 p-1  rounded-full  ring-2 ring-gray-300 dark:ring-gray-500 "
+                      src="/pexels-pixabay-207296.jpg"
+                      alt="avatar"
+                    ></img>
+                  </div>
 
+                  <div class="flex-1 min-w-0">
+                    <p class="text-sm font-semibold text-green-300 truncate dark:text-white">
+                      Neil Sims
+                    </p>
+                    <p class="text-sm text-white truncate dark:text-gray-400">
+                      email@User.com
+                    </p>
+                  </div>
+                    <span class="inline-flex items-center justify-center w-8 h-8 bg-white rounded-full transition ease-in-out delay-150">
+                      <svg class="w-5 h-5 text-blue-800   hover:-translate-y-1 hover:scale-110  duration-300 ..." aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 18" fill="currentColor">
+                        <path d="M18 4H16V9C16 10.0609 15.5786 11.0783 14.8284 11.8284C14.0783 12.5786 13.0609 13 12 13H9L6.846 14.615C7.17993 14.8628 7.58418 14.9977 8 15H11.667L15.4 17.8C15.5731 17.9298 15.7836 18 16 18C16.2652 18 16.5196 17.8946 16.7071 17.7071C16.8946 17.5196 17 17.2652 17 17V15H18C18.5304 15 19.0391 14.7893 19.4142 14.4142C19.7893 14.0391 20 13.5304 20 13V6C20 5.46957 19.7893 4.96086 19.4142 4.58579C19.0391 4.21071 18.5304 4 18 4Z" fill="currentColor" />
+                        <path d="M12 0H2C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2V9C0 9.53043 0.210714 10.0391 0.585786 10.4142C0.960859 10.7893 1.46957 11 2 11H3V13C3 13.1857 3.05171 13.3678 3.14935 13.5257C3.24698 13.6837 3.38668 13.8114 3.55279 13.8944C3.71889 13.9775 3.90484 14.0126 4.08981 13.996C4.27477 13.9793 4.45143 13.9114 4.6 13.8L8.333 11H12C12.5304 11 13.0391 10.7893 13.4142 10.4142C13.7893 10.0391 14 9.53043 14 9V2C14 1.46957 13.7893 0.960859 13.4142 0.585786C13.0391 0.210714 12.5304 0 12 0Z" fill="currentColor" />
+                      </svg>
+                      <span class="sr-only">Message icon</span>
+                    </span>
+                </div>
+              </li>
+            </ul>
+          </div>
           </div>
         </div>
       </aside>
