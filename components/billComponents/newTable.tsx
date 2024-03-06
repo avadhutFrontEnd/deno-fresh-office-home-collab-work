@@ -39,7 +39,7 @@ export default function newVideoEdit(props: ChildrenProps) {
                <tbody class=" h-full w-full py-3 ">
                   <tr class="w-full h-10 items-center rounded-md -indent-2 table-auto text-center   p-3">
                      {/* <div class=" "> */}
-                     <td class=" border-l-8 border-solid border-green-400  p-2 pr-4 ml-3 mb-2 rounded-l-lg bg-slate-200 ">
+                     <td class=" border-l-8 border-solid border-green-400 border-y border-y-gray-200  p-2 pr-4 ml-3 mb-2 rounded-l-lg ">
                         <div class="flex items-center gap-3">
                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-access-point" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="LimeGreen" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12l0 .01" /><path d="M14.828 9.172a4 4 0 0 1 0 5.656" /><path d="M17.657 6.343a8 8 0 0 1 0 11.314" /><path d="M9.168 14.828a4 4 0 0 1 0 -5.656" /><path d="M6.337 17.657a8 8 0 0 1 0 -11.314" /></svg>
                            <div class="flex flex-col">
@@ -48,7 +48,7 @@ export default function newVideoEdit(props: ChildrenProps) {
                         </div>
                      </td>
 
-                     <td class="border-blue-gray-50 border-b p-2 pr-4  bg-slate-200 ">
+                     <td class="border-blue-gray-50 border-b p-2 pr-4  border-y border-y-gray-200">
                         <div class="flex items-center gap-3">
                            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-user-hexagon" width={20} height={20} viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -61,17 +61,17 @@ export default function newVideoEdit(props: ChildrenProps) {
                            </div>
                         </div>
                      </td>
-                     <td class="border-blue-gray-50 border-b p-2 pr-4  bg-slate-200 ">
+                     <td class="border-blue-gray-50 border-b p-2 pr-4  border-y border-y-gray-200 ">
                         <div class="flex flex-col">
                            <p class="text-blue-gray-900 block font-sans text-xs font-medium leading-normal antialiased opacity-70 pt-0 pb-0">First Name</p>
                         </div>
                      </td>
-                     <td class="border-blue-gray-50 border-b p-2 pr-4  bg-slate-200 ">
+                     <td class="border-blue-gray-50 border-b p-2 pr-4  border-y border-y-gray-200 ">
                         <div class="flex flex-col">
                            <p class="text-blue-gray-900 block font-sans text-xs font-medium leading-normal antialiased opacity-70 pt-0 pb-0">Last Name</p>
                         </div>
                      </td>
-                     <td class="border-blue-gray-50 border-b p-2 pr-4  bg-slate-200 ">
+                     <td class="border-blue-gray-50 border-b p-2 pr-4  border-y border-y-gray-200 ">
                         <div class="flex items-center gap-3">
                            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-mail" width={20} height={20} viewBox="0 0 24 24" strokeWidth={2} stroke="black" fill="none" strokeLinecap="round" strokeLinejoin="round">
                               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -83,7 +83,7 @@ export default function newVideoEdit(props: ChildrenProps) {
                            </div>
                         </div>
                      </td>
-                     <td class="border-blue-gray-50 border-b p-2 pr-4  bg-slate-200 ">
+                     <td class="border-blue-gray-50 border-b p-2 pr-4  border-y border-y-gray-200 ">
                         <div class="flex items-center gap-3">
                            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-phone-filled" width={16} height={16} viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -94,21 +94,21 @@ export default function newVideoEdit(props: ChildrenProps) {
                            </div>
                         </div>
                      </td>
-                     <td class="border-blue-gray-50 border-b p-2 pr-4  bg-slate-200 ">
+                     <td class="border-blue-gray-50 border-b p-2 pr-4  border-y border-y-gray-200 ">
                         <div class="flex items-center justify-center ">
                            <button type="button" class="text-white bg-[#1da1f2] hover:bg-[#1da1f2]/90 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg text-sm px-3  text-center inline-flex items-center py-1.5 dark:focus:ring-[#1da1f2]/55">
                               Edit
                            </button>
                         </div>
                      </td>
-                     <td class="border-blue-gray-50 border-b p-2 pr-4 pl-4  bg-slate-200 ">
+                     <td class="border-blue-gray-50 border-b p-2 pr-4 pl-4  border-y border-y-gray-200">
                         <div class="flex items-center justify-center ">
                            <button type="button" class="text-white bg-[#1da1f2] hover:bg-[#1da1f2]/90 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg text-sm px-3 py-1.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 ">
                               View
                            </button>
                         </div>
                      </td>
-                     <td class="border-blue-gray-50 border-b p-2 pr-4  bg-slate-200 rounded-r-lg">
+                     <td class="border-blue-gray-50 border-y border-y-gray-200    p-2 pr-4  rounded-r-lg  border-r border-solid border-r-gray-200">
                         <button class="text-blue-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30 relative h-6 max-h-[20px] w-6 max-w-[20px] select-none rounded-lg text-center align-middle font-sans text-xxs font-medium uppercase transition-all disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
                            <span class="absolute left-1/2 top-2 -translate-x-1/2 -translate-y-1/2 transform">
                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-4 w-3">
@@ -122,7 +122,7 @@ export default function newVideoEdit(props: ChildrenProps) {
                   </tr>
                   <tr class="w-full h-10 items-center rounded-md -indent-2 table-auto text-center p-3">
                      {/* <div class=" "> */}
-                     <td class=" border-l-8 border-solid border-red-400  p-2 pr-4 ml-3 mb-2 rounded-l-lg bg-slate-200   ">
+                     <td class=" border-l-8 border-solid border-red-400 border-y border-y-gray-200  p-2 pr-4 ml-3 mb-2 rounded-l-lg ">
                         <div class="flex items-center gap-3">
                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-access-point-off" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="red" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 3l18 18" /><path d="M14.828 9.172a4 4 0 0 1 1.172 2.828" /><path d="M17.657 6.343a8 8 0 0 1 1.635 8.952" /><path d="M9.168 14.828a4 4 0 0 1 0 -5.656" /><path d="M6.337 17.657a8 8 0 0 1 0 -11.314" /></svg>
                            <div class="flex flex-col">
@@ -131,7 +131,7 @@ export default function newVideoEdit(props: ChildrenProps) {
                         </div>
                      </td>
 
-                     <td class="border-blue-gray-50 border-b p-2 pr-4 bg-slate-200 ">
+                     <td class="border-blue-gray-50 border-b p-2 pr-4  border-y border-y-gray-200 ">
                         <div class="flex items-center gap-3">
                            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-user-hexagon" width={20} height={20} viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -144,17 +144,17 @@ export default function newVideoEdit(props: ChildrenProps) {
                            </div>
                         </div>
                      </td>
-                     <td class="border-blue-gray-50 border-b p-2 pr-4 bg-slate-200 ">
+                     <td class="border-blue-gray-50 border-b p-2 pr-4  border-y border-y-gray-200 ">
                         <div class="flex flex-col">
                            <p class="text-blue-gray-900 block font-sans text-xs font-medium leading-normal antialiased opacity-70 pt-0 pb-0">First Name</p>
                         </div>
                      </td>
-                     <td class="border-blue-gray-50 border-b p-2 pr-4 bg-slate-200 ">
+                     <td class="border-blue-gray-50 border-b p-2 pr-4  border-y border-y-gray-200 ">
                         <div class="flex flex-col">
                            <p class="text-blue-gray-900 block font-sans text-xs font-medium leading-normal antialiased opacity-70 pt-0 pb-0">Last Name</p>
                         </div>
                      </td>
-                     <td class="border-blue-gray-50 border-b p-2 pr-4 bg-slate-200 ">
+                     <td class="border-blue-gray-50 border-b p-2 pr-4  border-y border-y-gray-200 ">
                         <div class="flex items-center gap-3">
                            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-mail" width={20} height={20} viewBox="0 0 24 24" strokeWidth={2} stroke="black" fill="none" strokeLinecap="round" strokeLinejoin="round">
                               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -166,7 +166,7 @@ export default function newVideoEdit(props: ChildrenProps) {
                            </div>
                         </div>
                      </td>
-                     <td class="border-blue-gray-50 border-b p-2 pr-4 bg-slate-200 ">
+                     <td class="border-blue-gray-50 border-b p-2 pr-4  border-y border-y-gray-200">
                         <div class="flex items-center gap-3">
                            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-phone-filled" width={16} height={16} viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -177,21 +177,21 @@ export default function newVideoEdit(props: ChildrenProps) {
                            </div>
                         </div>
                      </td>
-                     <td class="border-blue-gray-50 border-b p-2 pr-4 bg-slate-200 ">
+                     <td class="border-blue-gray-50 border-b p-2 pr-4  border-y border-y-gray-200">
                         <div class="flex items-center justify-center ">
                            <button type="button" class="text-white bg-[#1da1f2] hover:bg-[#1da1f2]/90 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg text-sm px-3  text-center inline-flex items-center py-1.5 dark:focus:ring-[#1da1f2]/55">
                               Edit
                            </button>
                         </div>
                      </td>
-                     <td class="border-blue-gray-50 border-b p-2 pr-4 pl-4 bg-slate-200 ">
+                     <td class="border-blue-gray-50 border-b p-2 pr-4 pl-4  border-y border-y-gray-200">
                         <div class="flex items-center justify-center ">
                            <button type="button" class="text-white bg-[#1da1f2] hover:bg-[#1da1f2]/90 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg text-sm px-3 py-1.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 ">
                               View
                            </button>
                         </div>
                      </td>
-                     <td class="border-blue-gray-50 border-b p-2 pr-4 bg-slate-200 rounded-r-lg">
+                     <td class="border-blue-gray-50 border-y border-y-gray-200    p-2 pr-4  rounded-r-lg  border-r border-solid border-r-gray-200">
                         <button class="text-blue-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30 relative h-6 max-h-[20px] w-6 max-w-[20px] select-none rounded-lg text-center align-middle font-sans text-xxs font-medium uppercase transition-all disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
                            <span class="absolute left-1/2 top-2 -translate-x-1/2 -translate-y-1/2 transform">
                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-4 w-3">
