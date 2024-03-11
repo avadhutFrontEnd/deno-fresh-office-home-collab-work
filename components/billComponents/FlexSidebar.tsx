@@ -1,5 +1,9 @@
 
 export default function Sidebar() {
+  const handlePrintInvoice = () => {
+    window.print();
+  };
+
   return (
     <>
       <aside id="sidebar-multi-level-sidebar" class="fixed inset-y-0 inset-x-0 flex-wrap items-center justify-between block  transition-all duration-200 -translate-x-full bg-white border-0 shadow-none  dark:bg-gray-950 ease-soft-in-out z-990  xl:translate-x-0 xl:bg-transparent ps ps--active-y max-w-64 overflow-y-auto z-40 w-[17rem]           h-[calc(100vh-40px)] sm:translate-x-0  border-solid border-gray-500 p-4" aria-label="Sidebar">
@@ -91,12 +95,12 @@ export default function Sidebar() {
                       </a>
                     </li>
                     <li class="mt-0.5 w-full">
-                      <a class="py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors dark:text-white dark:opacity-80" href="../pages/rtl.html">
+                      <button onClick={handlePrintInvoice} class="py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors dark:text-white dark:opacity-80" href="../pages/rtl.html">
                         <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
                           <i class="relative top-0 text-sm leading-normal text-red-600 fa-solid fa-list-check"></i>
                         </div>
                         <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Bills</span>
-                      </a>
+                      </button>
                     </li>
                     {/* <li class="w-full mt-4">
                       <h6 class="pl-6 ml-2 text-xs font-bold leading-tight uppercase dark:text-white opacity-60">Account pages</h6>
